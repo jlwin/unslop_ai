@@ -21,6 +21,9 @@ Worked examples for the main patterns, German and English. Every fix follows the
 15. Chat artifacts
 16. German special cases (dash typography, the „Fazit" ritual, salutations, sham breadth)
 17. Academic register
+18. Headings and slide titles
+19. Sentence construction: actor and verb
+20. The slide register
 
 ---
 
@@ -164,3 +167,66 @@ Fix: overclaiming („beweist" → „zeigt"; no „signifikant" without a test)
 
 - BEFORE: "Extensive evaluations across numerous benchmarks demonstrate that our novel framework significantly surpasses existing state-of-the-art methods."
 - AFTER: "Across the three benchmarks we tested (GLUE, XNLI, TyDiQA), the model beats the strongest baseline by 2 to 5 points; a paired bootstrap puts p under 0.01."
+
+## 18. Headings and slide titles
+
+A heading is a label: nouns that name the content beat half-sentences that hint at it. On slides this weighs double, because titles and agenda get read as a sequence.
+
+- VORHER (Slide): „Was uns das Kundenfeedback verrät" → NACHHER: „Kundenfeedback Q3: die drei häufigsten Beschwerden"
+- VORHER (Slide): „Ein Blick auf unsere Zahlen" → NACHHER: „Umsatz und Marge, Q1–Q3 2026"
+- VORHER (Agenda): „Wie es jetzt weitergeht" → NACHHER: „Nächste Schritte bis Jahresende"
+- BEFORE (slide): "How we think about pricing" → AFTER: "Pricing model: three tiers"
+- BEFORE (slide): "What this means for the roadmap" → AFTER: "Roadmap changes for Q4"
+
+The compound noun that names content AND function beats the bare topic label:
+
+- VORHER: „Die Anbieter" → NACHHER: „Anbietervergleich"
+- VORHER: „Der Begriff" → NACHHER: „Begriffsdefinition"
+- VORHER: „So funktioniert es" → NACHHER: „Funktionsweise"
+- VORHER: „Was wir heute klären" → NACHHER: „Agenda" (oder das thematische Substantiv)
+- VORHER: „Sortierung" (was wird sortiert?) → NACHHER: „Begriffsabgrenzung" / „Technologieabgrenzung"
+
+Two more title failure modes. The dramatizing relative clause eats space without adding information; replace it by stating the role of the content: „Fünf Aussagen, auf die sich der Termin zuspitzt" → „Fünf Ausgangsthesen für die Diskussion" (or „Fünf Zielaussagen", if that is what they are – the title must settle which). And the didactic meta-commentary that grades its own content reads condescending: „Wer macht was: zwei Ebenen genügen zur Orientierung" → „Vergleich: generalistische vs. spezialisierte Tools".
+
+Also nominal, but still wrong: „Vorstellung der Projektergebnisse" names the act of presenting, not the content → „Projektergebnisse: Pilot in drei Filialen". Question titles („Wohin entwickelt sich der Markt?") are a deliberate tension device at most once per deck; as standard scaffolding they become filler → „Marktprognose 2027". Where a deck runs full-sentence action titles throughout, every title has to carry a checkable claim („Churn sinkt seit Mai um 2 Punkte pro Monat"); the flagged pattern is the vague half-sentence, in either style.
+
+## 19. Sentence construction: actor and verb
+
+People write from an actor and a verb; generated prose hides both behind nominalizations and empty subjects.
+
+- VORHER: „Es wurde eine Optimierung der Ladezeiten durchgeführt." → NACHHER: „Wir haben die Ladezeiten halbiert: von 3,2 auf 1,6 Sekunden."
+- VORHER: „Im Rahmen der Durchführung der Migration kam es zu Verzögerungen." → NACHHER: „Die Migration hat sich um zwei Wochen verzögert; die Alt-Datenbank hatte keine brauchbaren Indizes."
+- BEFORE: "The implementation of the new process was performed by the operations team." → AFTER: "The operations team rolled out the new process in March."
+- BEFORE: "Utilization of the tool enables a reduction of manual effort." → AFTER: "The tool cuts the manual work: what took an hour now takes ten minutes."
+
+The test: find the verb hiding in the „-ung"/„-ion" noun, give it a named subject, and put both in the front third of the sentence. Elevated verbs get the same treatment as elevated nouns: „adressieren" → „angehen", „eruieren" → „klären"; "leverage" → "use", "remediate" → "fix" (outside registers where the term is the precise one).
+
+
+## 20. The slide register
+
+On slides the factual-nominal style is the professional voice; colloquial phrasing, drama, and command tone are the tells. Prose rules on actor-first sentences do not apply here.
+
+Colloquial → nominal:
+
+- VORHER: „Mitmachen" (als Programmpunkt) → NACHHER: „Interaktivität"
+- VORHER: „Wir setzen ganz vorne an – niemand braucht Vorkenntnisse." → NACHHER: „Fokussierung auf Grundlagen, um in 50 Minuten alle Teilnehmenden auf denselben Wissensstand zu bringen."
+
+Drama → plain statement (a sober passive is legitimate here):
+
+- VORHER: „Was fehlt, existiert für sie nicht." → NACHHER: „Nicht vorhandene Informationen werden nicht berücksichtigt."
+- VORHER: „Wer umgekehrt startet, zahlt Lehrgeld." → NACHHER: „Diese Reihenfolge vermeidet Doppelarbeit: erst Abgrenzung, dann Auswahl."
+
+Command tone → recommendation:
+
+- VORHER: „Zahlen, Fakten und Rechtliches immer gegenchecken!" → NACHHER: „Empfehlung: Zahlen, Fakten und rechtliche Aussagen vor Veröffentlichung prüfen."
+
+Em dash → conjunction, colon, or clause (zero dashes on slides):
+
+- VORHER: „Sofort einsetzbar — ideal für den Einstieg" → NACHHER: „Sofort einsetzbar und ideal für den Einstieg"
+
+Cut without replacement:
+
+- Performed virtues: „ehrlich, ohne Schönfärberei" – the professional baseline does not belong on the slide.
+- Moderator and internal notes on the slide face – they go into the speaker notes.
+- Status stamps („Entwurf", „Final") and blanket „Vertraulich" markers – only on explicit request.
+- Redundant contrast: „A statt B" when the positive statement already excludes the alternative („externe Marktdaten" needs no „– keine internen Zahlen").

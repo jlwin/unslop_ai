@@ -4,8 +4,8 @@ description: >-
   Writing and editing guardrail against AI slop in German and English prose.
   Use whenever text is being written or revised that should not read as
   machine-written – LinkedIn posts, emails, newsletters, blog articles, website
-  copy, reports, slide decks and their titles, bios, press releases, cover
-  letters. Always apply on requests
+  copy, reports, slide decks (Präsentationen, Folien, Folientitel), bios,
+  press releases, cover letters. Always apply on requests
   like "unslop", "de-slop", "humanize", "make this sound human", "sounds like
   ChatGPT", "remove AI patterns", "klingt nach AI/ChatGPT", "menschlicher
   machen", "entschlacken", "AI-Slop", "AI-Muster prüfen", "natürlicher
@@ -28,9 +28,30 @@ AI slop lives on three levels. Swapping words alone achieves little: structural 
 
 **The universal rule**: swap the vague claim for the checkable fact. That means a figure, a name, a date, a price, or the mechanism behind the claim. "Deutlich schneller" → "von 4 Klicks auf 1". But when the concrete fact is missing, mark the gap; **never** invent a number, anecdote, or source. A made-up detail damages trust more than an honest gap.
 
+## The short version
+
+Roughly seventy rules follow. When attention is scarce, these ten carry most of the effect:
+
+1. Swap every vague claim for a checkable fact; flag a gap rather than invent one.
+2. Pick the register first (profile table below): the same rule can be right in one register and wrong in the next.
+3. State the core point once, at its strongest spot; no formulaic opener, no generic closer.
+4. Vary sentence length; no parataxis chains, no triads.
+5. At most one negative parallelism per piece, and usually none.
+6. Clear the word lists; keep the punctuation budget (em dash: rare in prose, zero on slides).
+7. Prose: actor and verb early, the everyday word. Slides: sober nominal style.
+8. Headings and slide titles are noun labels that name the content.
+9. Name things (sources, tools, dates); name feelings instead of performing them.
+10. Never add facts, persona, or staccato the source did not have.
+
+Order of precedence when rules collide: guardrails beat everything, then the register profile, then P0 > P1 > P2.
+
+## Working with other content skills
+
+unslop runs as the quality layer on top of voice, brand, and format skills, and the split is: those skills decide WHAT is said and in which tone; unslop constrains HOW it is written. When a brand vocabulary term collides with the word lists, the brand term stays (in check mode, note the collision instead of flagging it). Structure and rhythm rules and the guardrails apply regardless of which skill produced the draft.
+
 ## Modes
 
-- **Write** (default for new text): apply the rules while drafting, silently, without mentioning them.
+- **Write** (default for new text): apply the rules while drafting, silently, without mentioning them. Before returning anything, run the self-check (end of this file) against your own draft once and fix what it flags; the reader only ever sees the corrected version.
 - **Check**: flag only, change nothing. Triggered by "prüfe", "scan", "what reads as AI here". Findings grouped by severity, each quoting the offending span.
 - **Rewrite**: audit + cleaned version + short change log. Default when an existing text is handed over.
 - **Edit file**: minimally edit a named file in place. Touch only flagged spans, leave passages that already read human untouched, re-read afterwards.
@@ -54,7 +75,7 @@ In every mode: quotations, code blocks, tables, and attributed third-party text 
 - **Hedge stacking**: "könnte potenziell", "may eventually": one hedge per claim, not two. AI hedges several times more than people do; more than three hedges in one paragraph is a warning sign. Calibrated hedging under real uncertainty stays (essential in technical and academic registers).
 - **Participle tails**: trailing participle phrases that simulate depth ("…, was das Engagement unterstreicht", "…, underscoring its commitment"). Cut them or replace them with a fact.
 - **The synonym carousel**: "Entwickler … Ingenieure … Praktiker" within one paragraph. People repeat the word that fits; forced variation reads like thesaurus abuse.
-- **Punctuation budget**: em dash (—) at most 1 per 500 words; German prose uses the en dash (–) with spaces anyway, so an English-style em dash without spaces inside German text is a double tell. Exclamation marks at most 1 per 1,000 words. Use semicolons and colons actively; AI avoids them.
+- **Punctuation budget**: em dash (—) at most 1 per 500 words; German prose uses the en dash (–) with spaces anyway, so an English-style em dash without spaces inside German text is a double tell. Exclamation marks at most 1 per 1,000 words. Use semicolons and colons actively; AI avoids them. For German number, percent, currency, and date conventions see the microformats section in `references/word-lists.md`.
 
 ## Level 2, constructive half: build the sentence like a person
 
@@ -104,6 +125,7 @@ Infer the profile from the text (short + hashtags = social; code = docs/tech; sa
 
 Slides are their own register, and they invert one prose rule: on a slide, the factual-nominal style IS the human professional voice. "Einstieg über die Grundlagen, damit alle Beteiligten ohne Vorwissen folgen können" beats "wir fangen bei null an" – the colloquial phrasing that sounds alive in a blog post reads as sloppy on a slide. The constructive sentence rules (actor first, everyday words) govern prose; on slides, apply these instead:
 
+- **The title sequence is the deck's summary.** Read only the titles, in order: they have to carry the storyline on their own – that is what noun labels buy you. One core statement per slide; a slide that needs two gets split. A title that promises something the slide body does not deliver means one of the two is wrong. The agenda is the title list, not a separate invention.
 - **Nouns over colloquial verbs and phrases.** "Interaktivität" instead of "Mitmachen", "Funktionsweise" instead of "So funktioniert es". A sober passive is fine here: "Ungeprüfte Angaben werden nicht übernommen" beats the dramatic "Ungeprüft ist wertlos."
 - **No sensational one-liners.** The punchy aphorism built for effect is slop in a business deck. State the fact plainly and let it carry itself.
 - **Recommendation tone, not command tone.** "Empfehlung: Kennzahlen vor dem Versand prüfen" instead of the barked "vor dem Versand immer checken!".
@@ -114,13 +136,13 @@ Slides are their own register, and they invert one prose rule: on a slide, the f
 - **No unrequested stamps.** "Entwurf", "Final", "Vertraulich" appear only when explicitly requested, not as default decoration.
 - **Zero em dashes.** Replace the dash construction with "und"/"oder", a colon, or a proper main/subordinate clause. "Direkt startklar — perfekt für neue Teammitglieder" needs nothing but "und".
 
-Inside bullet lists the parataxis rule is suspended – slide bullets are fragments on purpose, so judge them by information content, not by sentence variety. Bullets that all share one grammatical shape and assert nothing checkable stay flagged. Examples: `references/pattern-catalog.md`, section 20.
+Mixed documents split by surface: the slide face follows this register, while speaker notes follow the prose rules (actor-first sentences included). Inside bullet lists the parataxis rule is suspended – slide bullets are fragments on purpose, so judge them by information content, not by sentence variety. Bullets that all share one grammatical shape and assert nothing checkable stay flagged. Examples: `references/pattern-catalog.md`, section 20.
 
 ## Severity
 
-- **P0 – trust breakers** (fix on sight, always): chat artifacts ("Ich hoffe, das hilft!", "Gerne erstelle ich…"), knowledge-cutoff disclaimers, leaked citation tokens (`oaicite`, `turn0search0`, `utm_source=chatgpt.com`), unfilled placeholders (`[Name einsetzen]`), unsourced vague attributions, invented facts.
-- **P1 – clear AI tells** (fix before publishing): word-list hits, negative parallelisms, triads, stock transitions, formulaic openers, bold overuse, em-dash frequency, hedge stacks, significance inflation.
-- **P2 – polish** (when time allows): paragraph uniformity, copula avoidance, generic endings, title case in German or English subheadings.
+- **P0 – trust breakers** (fix on sight, always): chat artifacts ("Ich hoffe, das hilft!", "Gerne erstelle ich…"), knowledge-cutoff disclaimers, leaked citation tokens (`oaicite`, `turn0search0`, `utm_source=chatgpt.com`), unfilled placeholders (`[Name einsetzen]`), unsourced vague attributions, invented facts, moderator or internal notes on a slide face (they leak internals to the audience).
+- **P1 – clear AI tells** (fix before publishing): word-list hits, negative parallelisms, triads, stock transitions, formulaic openers, bold overuse, em-dash frequency (any dash on a slide), hedge stacks, significance inflation, teaser or colloquial slide titles, colloquial register and command tone on slides, unrequested status stamps, a deck whose title sequence does not carry the storyline, mixed German/English number formats in one document.
+- **P2 – polish** (when time allows): paragraph uniformity, copula avoidance, generic endings, title case in German or English subheadings, nominalizations and "es wurde" constructions in prose, redundant contrast pairs, microformat slips (spacing in "50 %", decimal comma, date format).
 
 Quick pass = P0 + P1. Full audit = all three.
 
@@ -165,7 +187,15 @@ And: this skill serves good writing, not the evasion of AI detectors or of discl
 
 **Write**: the text only. Follow the rules without announcing them; the reader never hears about guidelines or rule numbers.
 
+## Maintaining this skill
+
+- **Learn from corrections.** When the user corrects output or reviews a document (slide comments, tracked changes, edits to a draft), generalize each correction into a rule or a before/after pair and fold it into this file or the catalog. One review can be worth a version.
+- **Invented examples only.** Never quote source material verbatim in rules or examples – rebuild every pattern with invented content from a different domain. Confidential inputs stay out of the skill, including in the git history.
+- **Version and log.** Bump the version and record the change in `CHANGELOG.md`.
+- **Regression-check.** After any change, run the cases in `evals/cases.md` in check mode and compare the findings to the expected results. The clean case has to stay clean; overflagging is a regression too.
+
 ## References
 
 - `references/word-lists.md` – banned/suspect words and stock phrases, German and English, in three tiers with replacement suggestions. Load on every check/rewrite pass.
 - `references/pattern-catalog.md` – before/after examples for all patterns in both languages, including the German special cases (en dash vs. em dash, the „Fazit" ritual, salutation calques, sham-breadth constructions). Load when a pattern is unclear or examples are needed.
+- `evals/cases.md` – regression cases with expected findings, for checking skill changes.

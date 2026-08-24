@@ -67,14 +67,16 @@ A taste of what the rewrite mode does:
 > **Before:** *"This launch stands as a powerful testament to our team's relentless pursuit of excellence."*
 > **After:** *"We shipped the export feature today. The beta group has been running it since April without a single support ticket."*
 
-More in [`references/pattern-catalog.md`](references/pattern-catalog.md): 17 pattern families, each with German and English before/after pairs.
+More in [`references/pattern-catalog.md`](references/pattern-catalog.md): 20 pattern families, each with German and English before/after pairs.
 
 ## Repository layout
 
 ```
 SKILL.md                        the skill: levels, modes, workflow, profiles, guardrails
-references/word-lists.md        banned and suspect vocabulary, DE + EN, in three evidence tiers
+references/word-lists.md        banned and suspect vocabulary, DE + EN, tiered, plus microformats
 references/pattern-catalog.md   worked before/after examples for every pattern family
+evals/cases.md                  regression cases with expected findings
+CHANGELOG.md                    version history
 ```
 
 ## Scope and ethics

@@ -184,9 +184,9 @@ The compound noun that names content AND function beats the bare topic label:
 - VORHER: „Der Begriff" → NACHHER: „Begriffsdefinition"
 - VORHER: „So funktioniert es" → NACHHER: „Funktionsweise"
 - VORHER: „Was wir heute klären" → NACHHER: „Agenda" (oder das thematische Substantiv)
-- VORHER: „Sortierung" (was wird sortiert?) → NACHHER: „Begriffsabgrenzung" / „Technologieabgrenzung"
+- VORHER: „Sortierung" (was wird sortiert?) → NACHHER: „Begriffsabgrenzung" / „Themenabgrenzung"
 
-Two more title failure modes. The dramatizing relative clause eats space without adding information; replace it by stating the role of the content: „Fünf Aussagen, auf die sich der Termin zuspitzt" → „Fünf Ausgangsthesen für die Diskussion" (or „Fünf Zielaussagen", if that is what they are – the title must settle which). And the didactic meta-commentary that grades its own content reads condescending: „Wer macht was: zwei Ebenen genügen zur Orientierung" → „Vergleich: generalistische vs. spezialisierte Tools".
+Two more title failure modes. The dramatizing relative clause eats space without adding information; replace it by stating the role of the content: „Vier Thesen, die den weiteren Verlauf bestimmen" → „Vier Ausgangsthesen für die Diskussion" (or „Vier Zielaussagen", if that is what they are – the title must settle which). And the didactic meta-commentary that grades its own content reads condescending: „Wer liefert was: mehr Detail braucht es an dieser Stelle nicht" → „Vergleich: Standardsoftware vs. Eigenentwicklung".
 
 Also nominal, but still wrong: „Vorstellung der Projektergebnisse" names the act of presenting, not the content → „Projektergebnisse: Pilot in drei Filialen". Question titles („Wohin entwickelt sich der Markt?") are a deliberate tension device at most once per deck; as standard scaffolding they become filler → „Marktprognose 2027". Where a deck runs full-sentence action titles throughout, every title has to carry a checkable claim („Churn sinkt seit Mai um 2 Punkte pro Monat"); the flagged pattern is the vague half-sentence, in either style.
 
@@ -209,24 +209,24 @@ On slides the factual-nominal style is the professional voice; colloquial phrasi
 Colloquial → nominal:
 
 - VORHER: „Mitmachen" (als Programmpunkt) → NACHHER: „Interaktivität"
-- VORHER: „Wir setzen ganz vorne an – niemand braucht Vorkenntnisse." → NACHHER: „Fokussierung auf Grundlagen, um in 50 Minuten alle Teilnehmenden auf denselben Wissensstand zu bringen."
+- VORHER: „Wir fangen bei null an – niemand braucht Vorkenntnisse." → NACHHER: „Einstieg über die Grundlagen, damit alle Beteiligten ohne Vorwissen folgen können."
 
 Drama → plain statement (a sober passive is legitimate here):
 
-- VORHER: „Was fehlt, existiert für sie nicht." → NACHHER: „Nicht vorhandene Informationen werden nicht berücksichtigt."
-- VORHER: „Wer umgekehrt startet, zahlt Lehrgeld." → NACHHER: „Diese Reihenfolge vermeidet Doppelarbeit: erst Abgrenzung, dann Auswahl."
+- VORHER: „Ungeprüft ist wertlos." → NACHHER: „Ungeprüfte Angaben werden nicht übernommen."
+- VORHER: „Wer ohne Backup migriert, riskiert den Datenbestand." → NACHHER: „Ein Backup vor der Migration macht jeden Schritt umkehrbar."
 
 Command tone → recommendation:
 
-- VORHER: „Zahlen, Fakten und Rechtliches immer gegenchecken!" → NACHHER: „Empfehlung: Zahlen, Fakten und rechtliche Aussagen vor Veröffentlichung prüfen."
+- VORHER: „Kennzahlen vor dem Versand immer checken!" → NACHHER: „Empfehlung: Kennzahlen vor dem Versand prüfen."
 
 Em dash → conjunction, colon, or clause (zero dashes on slides):
 
-- VORHER: „Sofort einsetzbar — ideal für den Einstieg" → NACHHER: „Sofort einsetzbar und ideal für den Einstieg"
+- VORHER: „Direkt startklar — perfekt für neue Teammitglieder" → NACHHER: „Direkt startklar und perfekt für neue Teammitglieder"
 
 Cut without replacement:
 
-- Performed virtues: „ehrlich, ohne Schönfärberei" – the professional baseline does not belong on the slide.
+- Performed virtues: „offen, ehrlich und auf Augenhöhe" – the professional baseline does not belong on the slide.
 - Moderator and internal notes on the slide face – they go into the speaker notes.
 - Status stamps („Entwurf", „Final") and blanket „Vertraulich" markers – only on explicit request.
 - Redundant contrast: „A statt B" when the positive statement already excludes the alternative („externe Marktdaten" needs no „– keine internen Zahlen").

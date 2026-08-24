@@ -4,7 +4,8 @@ description: >-
   Writing and editing guardrail against AI slop in German and English prose.
   Use whenever text is being written or revised that should not read as
   machine-written – LinkedIn posts, emails, newsletters, blog articles, website
-  copy, reports, bios, press releases, cover letters. Always apply on requests
+  copy, reports, slide decks and their titles, bios, press releases, cover
+  letters. Always apply on requests
   like "unslop", "de-slop", "humanize", "make this sound human", "sounds like
   ChatGPT", "remove AI patterns", "klingt nach AI/ChatGPT", "menschlicher
   machen", "entschlacken", "AI-Slop", "AI-Muster prüfen", "natürlicher
@@ -47,7 +48,7 @@ In every mode: quotations, code blocks, tables, and attributed third-party text 
 
 - **Burstiness**: never three similar-length sentences in a row. Mix short ones (3–8 words) with long ones (25+). The most measurable single indicator.
 - **The parataxis trap**: chains of short main clauses ("Kurzer Satz. Noch einer. Und noch einer.") are themselves an AI tell. Connect thoughts with conjunctions, subordinate clauses, semicolons, or a colon, so that causality and contrast live in the syntax. One deliberate fragment is rhythm; three identical ones in a row are a drumroll.
-- **Negative parallelism**: "Es geht nicht um X, sondern um Y" / "It's not X, it's Y", including the version split across two sentences and the stacked multi-negation before the reveal. Allow one per piece at most, and only where it does real argumentative work. Otherwise make the positive statement outright.
+- **Negative parallelism**: "Es geht nicht um X, sondern um Y" / "It's not X, it's Y", including the version split across two sentences, the stacked multi-negation before the reveal, and the clipped German short forms "A statt B" ("Dialog statt Vortrag") and "es ist A – nicht B". Allow one per piece at most, and only where the distinction does real argumentative work. Usually the positive statement alone suffices, because it excludes the alternative implicitly: "externe Marktdaten" already says the figures are not internal.
 - **Triads**: "schnell, einfach und effizient": AI presses everything into groups of three. Take two, take four, or write a full sentence. At most one adjective triad per piece.
 - **Copula avoidance**: "dient als", "fungiert als", "bietet", "serves as", "boasts" → "ist", "hat", "is", "has". Press-release verbs only when they carry real meaning.
 - **Hedge stacking**: "könnte potenziell", "may eventually": one hedge per claim, not two. AI hedges several times more than people do; more than three hedges in one paragraph is a warning sign. Calibrated hedging under real uncertainty stays (essential in technical and academic registers).
@@ -55,11 +56,25 @@ In every mode: quotations, code blocks, tables, and attributed third-party text 
 - **The synonym carousel**: "Entwickler … Ingenieure … Praktiker" within one paragraph. People repeat the word that fits; forced variation reads like thesaurus abuse.
 - **Punctuation budget**: em dash (—) at most 1 per 500 words; German prose uses the en dash (–) with spaces anyway, so an English-style em dash without spaces inside German text is a double tell. Exclamation marks at most 1 per 1,000 words. Use semicolons and colons actively; AI avoids them.
 
+## Level 2, constructive half: build the sentence like a person
+
+Stripping tells is only half of level 2. The other half is how the sentence gets built in the first place: people write from an actor and a verb, models write from abstractions and templates. Examples for all of this: `references/pattern-catalog.md`, section 19.
+
+- **Actor and verb early.** Who does what? Subject and finite verb belong in the front third; detail follows. A sentence that opens with a 15-word runway („Im Rahmen der im letzten Quartal durchgeführten Analyse der…") was built backwards.
+- **Verbs instead of nominalizations.** „Die Durchführung der Migration erfolgte durch das Team" → „Das Team hat migriert." Every „-ung + erfolgen/durchführen/vornehmen" construction hides the verb the sentence actually wanted; the English twin is "perform an analysis of" instead of "analyze".
+- **Concrete subjects.** „Es wurde entschieden" / "a decision was made" hides the actor. Name them: the team, the customer, the tool. Passive stays only where the actor is genuinely irrelevant.
+- **The word you would say out loud.** Prefer the everyday word over the elevated one: „nutzen" statt „adressieren", „klären" statt „eruieren", „reden mit" statt „in den Austausch gehen"; "use" not "utilize", "fix" not "remediate". Exception: registers where the elevated term is the precise one (legal, security, medicine).
+- **One idea per sentence; one subordinate clause as the default.** Chains of „was", „wobei", „welches" read as generated padding. Split, and let a logic word (weil, aber, deshalb / because, but, so) carry the connection instead of a stacked „zudem" / "moreover".
+- **Answer the reader's next question.** A person follows a claim with its consequence („Kostet 40 € mehr. Dafür entfällt der zweite Termin."); a model restates the claim in fresh words. If the next sentence adds no new information, cut it.
+
+Same guardrails as everywhere: this changes construction, never content. No new facts, no injected personality. And one register exception: these rules govern flowing prose. Slides invert part of them – there the compact nominal style is the professional voice (see "The slide register" under Context profiles).
+
 ## Level 3: structure
 
 - **The takeaway once, not three times**: place the core point exactly once, at the spot with the most impact. Don't repeat it section by section, no ritual "Was heißt das für dich?" paragraph. Leave at least one example uninterpreted; the reader can think.
 - **Paragraph uniformity**: when every paragraph runs 3–5 sentences at identical length, break the pattern on purpose: one single-sentence paragraph, one long one. Same for sections: not every block built as claim → three supports → mini-summary.
 - **Template scaffolding**: headings like "Einleitung / Überblick / Fazit / Key Takeaways" and dramatizing titles ("Die versteckte Gefahr von X") get replaced by headings that name what the section actually contains. Headings describe; they don't tease.
+- **Headings and slide titles are noun labels**: name the thing itself – "Umsatzentwicklung Q1–Q3", "Projektrisiken", "Team-Setup ab März". The strongest form is the compound noun that names content AND what the slide does with it: "Anbietervergleich" instead of "Die Anbieter", "Begriffsdefinition" instead of "Der Begriff", "Funktionsweise" instead of "So funktioniert es". Flag the teaser half-sentence that only hints at what's coming ("Was das für uns bedeutet", "Ein Blick auf unsere Zahlen", "How we think about pricing"), the colloquial sentence-title ("Was wir heute klären"), the question-as-heading used as scaffolding, the dramatizing relative clause that eats title space without adding information ("…, auf die sich der Termin zuspitzt"), the didactic meta-commentary that talks down to the room ("zwei Ebenen genügen zur Orientierung"), and the nominal phrase that names the act of presenting instead of the content ("Vorstellung der Ergebnisse"). When a title introduces material whose role is unclear, state the role: are these five statements assumptions up for discussion, or the goal of it? On slides this counts double: titles and agenda get skimmed as a sequence, and noun labels are what make that sequence scannable. Where a deck deliberately runs full-sentence action titles, each title must carry a checkable claim ("Churn sinkt seit Mai um 2 Punkte pro Monat"), never a vague half-sentence. Examples: `references/pattern-catalog.md`, section 18.
 - **Formulaic openers and closers**: don't open with wide-angle context ("In der heutigen digitalen Welt…"). Open on the actual news or the claim itself; context comes second. No generic ending ("Die Zukunft bleibt spannend", "Es bleibt abzuwarten"); a closing thought has to be specific to the argument. Often the best fix is stopping one paragraph earlier.
 - **Named instead of vague references**: "ein bekanntes Produktivitätsbuch" → the actual title. Experts get names, "kürzlich" gets a date, tools get a price and a version. Vague authority ("Studien zeigen", "Branchenkenner sind sich einig") either gets a real source or gets cut.
 - **Name the feeling instead of performing it**: "Ehrlich: Das hat mich geärgert" statt "Ein Kloß bildete sich in meinem Hals". Body-and-atmosphere metaphors for emotion are the single biggest structural tell (81 % AI vs. 38 % human). Keep imagery for the single moment that earns it.
@@ -69,21 +84,37 @@ In every mode: quotations, code blocks, tables, and attributed third-party text 
 
 ## Context profiles
 
-Infer the profile from the text (short + hashtags = social; code = docs/tech; salutation = email; citations = academic) or ask. The profile sets the strictness:
+Infer the profile from the text (short + hashtags = social; code = docs/tech; salutation = email; citations = academic; deck outline or slide content = slides) or ask. The profile sets the strictness:
 
-| Rule | Social/LinkedIn | Blog/article | Email/DM | Docs/tech | Academic |
-|---|---|---|---|---|---|
-| Word lists | strict | strict | P0/P1 only | partial¹ | strict + own list² |
-| Em dash/punctuation | relaxed (2 ok) | strict | strict | relaxed | strict |
-| Fragments/parataxis | native register | strict | relaxed | lists ok | strict |
-| Bullet excess | relaxed | strict | strict | lists are docs | strict |
-| Promo language | some sell ok | strict | strict | strict | maximum |
-| Hedging | strict | strict | relaxed | "kann" is precise | keep calibrated! |
-| Emoji/hashtags | 1–2 subtle | none | none | none | none |
-| Personal voice | wanted | wanted | natural | **do not inject** | **do not inject** |
+| Rule | Social/LinkedIn | Blog/article | Email/DM | Docs/tech | Academic | Slides/deck |
+|---|---|---|---|---|---|---|
+| Word lists | strict | strict | P0/P1 only | partial¹ | strict + own list² | strict |
+| Em dash/punctuation | relaxed (2 ok) | strict | strict | relaxed | strict | zero – use "und"/"oder", colon, or a clause |
+| Fragments/parataxis | native register | strict | relaxed | lists ok | strict | bullets are the register |
+| Bullet excess | relaxed | strict | strict | lists are docs | strict | native, ≤6 per slide |
+| Promo language | some sell ok | strict | strict | strict | maximum | strict |
+| Hedging | strict | strict | relaxed | "kann" is precise | keep calibrated! | strict |
+| Emoji/hashtags | 1–2 subtle | none | none | none | none | none |
+| Personal voice | wanted | wanted | natural | **do not inject** | **do not inject** | lives in the delivery, not on the slide |
 
 ¹ Don't flag terms with real technical meaning (robust, ecosystem, seamless around APIs).
 ² Academic adds: overclaiming verbs (beweist → zeigt / proves → shows), contribution-list clichés, citation dumping, "novel" inflation. No verb stronger than its evidence; every empirical claim needs a number, figure, or citation. In this register, precision without personality is exactly what a human expert sounds like.
+
+### The slide register
+
+Slides are their own register, and they invert one prose rule: on a slide, the factual-nominal style IS the human professional voice. "Fokussierung auf Grundlagen, um alle Teilnehmenden auf denselben Wissensstand zu bringen" beats "wir setzen ganz vorne an" – the colloquial phrasing that sounds alive in a blog post reads as sloppy on a slide. The constructive sentence rules (actor first, everyday words) govern prose; on slides, apply these instead:
+
+- **Nouns over colloquial verbs and phrases.** "Interaktivität" instead of "Mitmachen", "Funktionsweise" instead of "So funktioniert es". A sober passive is fine here: "Nicht vorhandene Informationen werden nicht berücksichtigt" beats the dramatic "Was fehlt, existiert für sie nicht."
+- **No sensational one-liners.** The punchy aphorism built for effect is slop in a business deck. State the fact plainly and let it carry itself.
+- **Recommendation tone, not command tone.** "Empfehlung: Zahlen und rechtliche Aussagen vor Veröffentlichung prüfen" instead of the barked "immer gegenchecken!".
+- **Positive framing.** Name the benefit of the recommended path instead of threatening the alternative ("Wer umgekehrt startet, zahlt Lehrgeld" → what does the right order save?).
+- **Contrast only when it adds information.** "A statt B" / "es ist A – nicht B" is the deck version of the negative parallelism, and mostly redundant: "externe Marktdaten" already excludes internal figures. Keep a contrast only when the distinction itself is the point (a real comparison slide).
+- **No performed virtues.** "ehrlich, ohne Schönfärberei" writes a professional baseline onto the slide as if it were remarkable. Cut it.
+- **Notes belong in the notes.** Moderator instructions and internal remarks go into speaker notes, never onto the slide.
+- **No unrequested stamps.** "Entwurf", "Final", "Vertraulich" appear only when explicitly requested, not as default decoration.
+- **Zero em dashes.** Replace the dash construction with "und"/"oder", a colon, or a proper main/subordinate clause. "Sofort einsetzbar — ideal für den Einstieg" needs nothing but "und".
+
+Inside bullet lists the parataxis rule is suspended – slide bullets are fragments on purpose, so judge them by information content, not by sentence variety. Bullets that all share one grammatical shape and assert nothing checkable stay flagged. Examples: `references/pattern-catalog.md`, section 20.
 
 ## Severity
 
@@ -120,6 +151,9 @@ And: this skill serves good writing, not the evasion of AI detectors or of discl
 8. Wide-angle opener, generic closer? → sharpen or delete
 9. Read it aloud (mentally): would you say this to a colleague? → if not, rephrase
 10. Could the same AI have written this text for any company? → add specifics
+11. Headings and slide titles: noun labels that name the content? → replace teaser half-sentences, colloquial sentence-titles, and question scaffolding
+12. Sentences built actor-first? → dissolve nominalizations and "es wurde" constructions into verbs with named subjects (prose only – slides stay nominal)
+13. On slides: colloquial phrases, command tone, punchline one-liners, moderator notes, or status stamps? → formalize, soften to recommendations, move notes to speaker notes, drop the stamps
 
 ## Output formats
 

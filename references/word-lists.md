@@ -115,3 +115,17 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 On sight: remove mechanically, replace with a real reference where one was meant. Their presence is close to proof of unedited copy-paste from a chat tool:
 
 `oaicite`, `contentReference`, `turn0search0`, `citeturn`, `grok_card`, `attributableIndex`, `[attached_file:1]`, URL parameters `utm_source=chatgpt.com|openai|claude.ai|perplexity.ai`, unfilled placeholders (`[Name]`, `[INSERT X]`, `2025-XX-XX`, `<!-- TODO -->`), Markdown asterisks in plain-text contexts (email, DM, LinkedIn raw text)
+
+## Microformats (weak but cheap tells)
+
+Wrong locale conventions read as pasted-from-a-US-tool. Individually P2; mixed conventions inside one document are P1.
+
+**German documents:**
+
+- Percent with a space: „50 %", not „50%"
+- Decimal comma and dot as thousands separator: „3,2 Sekunden", „10.000 Nutzer" – never „3.2" or „10,000"
+- Currency after the amount: „40 €", „1,2 Mio. €"
+- Dates: „24.08.2026" or „24. August 2026" – never „08/24/2026" or „2026-08-24" in running prose (ISO stays fine in tables and file names)
+- Quotation marks: „deutsche" – straight "US quotes" in an otherwise typeset German text are a paste signal (see section above)
+
+**English documents:** the inverse conventions apply (50%, 3.2, 10,000, $40 / €40 before or after per style, Aug 24, 2026). The flag in both languages is the same: two conventions mixed in one document.

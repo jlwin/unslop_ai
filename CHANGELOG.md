@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.4 – 2026-09-03
+
+- Load-bearing metaphors as a level-2 pattern („das trägt", „tragfähig", „zahlt sich aus", „Rückgrat", "backbone", "pays off"): sound decisive, assert nothing checkable; replace with the plain verb plus the criterion, literal uses stay
+- Constructive half: the verb has to name the real operation once the actor is named
+- Repeating item lists (catalogues, card decks): entry-length uniformity flagged, with a target mix
+- Slide register: no load-bearing metaphors as verdicts; profile-table row and P1 wiring added
+
 ## v1.3 – 2026-08-24
 
 - "The short version": ten-rule core checklist plus an order of precedence

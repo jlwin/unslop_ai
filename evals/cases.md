@@ -99,3 +99,16 @@ EXPECTED:
 - P0: leaked AI tracking parameter in the URL
 - P1: mixed number conventions in a German sentence (10,000 / 3.5 / 12% without spacing)
 - P2: US date format in German prose
+
+
+## Case 9 – LinkedIn story post (profile: social, narrative)
+
+INPUT:
+> Zur Einordnung: Unser Team betreut seit 2023 rund 40 Mittelständler, meist mit knappen IT-Ressourcen. Letzten Monat rief ein Geschäftsführer an. Herr Krause, seit 20 Jahren Inhaber eines Familienbetriebs und ein erfahrener Kaufmann, war zunächst skeptisch. Wir zeigten ihm das System, er testete es, und am Ende unterschrieb er. Heute läuft alles stabil, das Team ist zufrieden, und alle offenen Fragen sind geklärt. Und da wurde mir klar: Am Ende zählt nicht die Technik, sondern das Vertrauen.
+
+EXPECTED:
+- P1: realization coda („Und da wurde mir klar…")
+- P1: fully front-loaded backstory („Zur Einordnung: …")
+- P2: person introduced via description block instead of action or speech
+- P2: everything resolved, no open thread; flat escalation (setup → demo → signature in even beats)
+- Rewrite direction: end on the event or an open question, one temporal move, let Herr Krause enter through his own words

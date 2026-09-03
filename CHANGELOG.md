@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.5 – 2026-09-03
+
+- Narrative-content rules derived from StoryScope v6 (arXiv:2604.03136): realization codas and epilogues, ambivalence allowed to stand, one temporal move instead of front-loaded backstory, people introduced through action or speech, real quotes over narration, one untied tangent, varied intensity, sparse direct address
+- Anti-convergence rule made explicit: one or two structural moves per piece, rotated – never the whole menu
+- Severity wiring (codas/backstory P1; escalation, atmosphere filler, description-block intros P2), self-check item 14, catalog section 21, regression case 9
+
 ## v1.4 – 2026-09-03
 
 - Load-bearing metaphors as a level-2 pattern („das trägt", „tragfähig", „zahlt sich aus", „Rückgrat", "backbone", "pays off"): sound decisive, assert nothing checkable; replace with the plain verb plus the criterion, literal uses stay

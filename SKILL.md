@@ -24,7 +24,7 @@ AI slop lives on three levels. Swapping words alone achieves little: structural 
 
 1. **Word level** – vocabulary, stock phrases, punctuation. The weakest but most visible signal. Lists: `references/word-lists.md`.
 2. **Sentence and rhythm level** – uniform sentence lengths, parataxis chains, triads, negative parallelisms, load-bearing metaphors, hedge stacking, copula avoidance.
-3. **Structure level** – the spelled-out takeaway, uniform paragraphs, template scaffolding, vague instead of named references, shape convergence across texts. The most durable signal.
+3. **Structure level** – the spelled-out takeaway, uniform paragraphs, template scaffolding, vague instead of named references, narrative arcs that explain and resolve everything, shape convergence across texts. The most durable signal.
 
 **The universal rule**: swap the vague claim for the checkable fact. That means a figure, a name, a date, a price, or the mechanism behind the claim. "Deutlich schneller" → "von 4 Klicks auf 1". But when the concrete fact is missing, mark the gap; **never** invent a number, anecdote, or source. A made-up detail damages trust more than an honest gap.
 
@@ -105,6 +105,22 @@ Same guardrails as everywhere: this changes construction, never content. No new 
 - **Novelty and significance inflation**: don't blow routine events up into milestones ("markiert einen Wendepunkt", "läutet eine neue Ära ein"). If deleting the significance clause leaves a sentence that still works, the clause was filler – out with it.
 - **Shape convergence**: for serial content (posts, newsletters), compare the skeleton to the last 2–3 pieces. When opener, arc, and ending repeat across pieces, a new recognizable cluster is forming. Choose one or two structural moves per piece and rotate them across pieces; never run the whole toolbox at once.
 
+### Narrative content: stories, anecdotes, case studies
+
+These rules apply wherever the text tells a story – the LinkedIn anecdote, the blog essay, the case study, the newsletter opener. They come from the strongest empirical result in this field (StoryScope 2026): discourse structure alone identifies AI text with 93.2 % accuracy, and the features below are the ones that separate the two. Surface fixes leave them untouched.
+
+- **Cut the realization coda.** AI ends a story by explaining it: „…und da wurde mir klar, dass es nie um das Tool ging." / "…and that's when I realized". Narrators explain the theme in 77 % of AI stories against 52 % of human ones, and models resolve through internal insight far more often than people do (47 % vs. 27 %). End on the event, the number, or the unresolved question; the reader draws the lesson.
+- **No epilogue after the ending.** The quiet wrap-up paragraph after the natural end point is a model habit. When the story lands, stop. The same goes for resolving every thread: one open end reads human, total tidiness reads generated.
+- **Let ambivalence stand.** People close stories with both feelings intact far more often than models do (morally mixed protagonists: 59 % vs. 38 %). „Der Wechsel hat sich gelohnt, und das alte Setup fehlt mir trotzdem" needs no reconciliation sentence.
+- **Don't front-load the backstory.** AI delivers all context first, then a strictly linear chain. People jump: they open mid-scene, hold a detail back, and let a later reveal change what an earlier detail meant. One deliberate temporal move per piece – cold open, delayed number, callback – is worth more than any word swap.
+- **Introduce people through what they do or say.** AI introduces a person with an external description block (52 % vs. 30 %); people let someone enter through an action or a line of their own. „Die Ops-Leiterin unterbrach nach zwei Minuten: ‚Das dauert uns zu lange.'" beats a title-and-background paragraph.
+- **Use the real quote.** Human narration carries more quoted voice than AI narration. Where an actual sentence exists – the customer's objection, the line from the meeting – quote it. Never fabricate one (guardrails); a missing quote is a gap, not a license.
+- **One tangent is allowed.** Human writing digresses; models keep a single track (no subplots: 79 % vs. 57 %). A short side path that only obliquely relates, left untied, reads human. Don't label it or bend it back to the thesis.
+- **Vary the intensity.** Flat, even escalation from start to finish is a model fingerprint. Give the piece one peak and let other passages sit lower; not every beat deserves the same weight. The same applies to atmosphere: sensory scene-painting as default texture (81 % embodied-emotion rate vs. 38 %) is filler unless one moment has earned it.
+- **Address the reader only where it's real.** People acknowledge the reading situation far more often than models (direct address: 28 % vs. 7 %) – „wer nur die Zahl braucht: dritter Absatz". Used once, it reads human; used as a recurring device, it becomes the next template.
+
+The anti-convergence rule governs all of this: the five major models cluster in one narrow structural region, while human pieces scatter – rarity itself is the human signal. So never apply this list as a checklist. Pick one or two moves per piece, vary them across pieces, and be able to say why this piece got this shape.
+
 ## Context profiles
 
 Infer the profile from the text (short + hashtags = social; code = docs/tech; salutation = email; citations = academic; deck outline or slide content = slides) or ask. The profile sets the strictness:
@@ -145,8 +161,8 @@ Mixed documents split by surface: the slide face follows this register, while sp
 ## Severity
 
 - **P0 – trust breakers** (fix on sight, always): chat artifacts ("Ich hoffe, das hilft!", "Gerne erstelle ich…"), knowledge-cutoff disclaimers, leaked citation tokens (`oaicite`, `turn0search0`, `utm_source=chatgpt.com`), unfilled placeholders (`[Name einsetzen]`), unsourced vague attributions, invented facts, moderator or internal notes on a slide face (they leak internals to the audience).
-- **P1 – clear AI tells** (fix before publishing): word-list hits, negative parallelisms, triads, stock transitions, formulaic openers, bold overuse, em-dash frequency (any dash on a slide), hedge stacks, significance inflation, teaser or colloquial slide titles, colloquial register and command tone on slides, unrequested status stamps, a deck whose title sequence does not carry the storyline, load-bearing metaphors used as verdicts, mixed German/English number formats in one document.
-- **P2 – polish** (when time allows): paragraph uniformity, copula avoidance, generic endings, title case in German or English subheadings, nominalizations and "es wurde" constructions in prose, redundant contrast pairs, microformat slips (spacing in "50 %", decimal comma, date format).
+- **P1 – clear AI tells** (fix before publishing): word-list hits, negative parallelisms, triads, stock transitions, formulaic openers, bold overuse, em-dash frequency (any dash on a slide), hedge stacks, significance inflation, teaser or colloquial slide titles, colloquial register and command tone on slides, unrequested status stamps, a deck whose title sequence does not carry the storyline, load-bearing metaphors used as verdicts, mixed German/English number formats in one document, realization codas and epilogues after a story's natural end, fully front-loaded backstory in narrative pieces.
+- **P2 – polish** (when time allows): paragraph uniformity, copula avoidance, generic endings, title case in German or English subheadings, nominalizations and "es wurde" constructions in prose, redundant contrast pairs, microformat slips (spacing in "50 %", decimal comma, date format), flat emotional escalation and default atmosphere-painting in narrative pieces, person introductions via description block instead of action or speech.
 
 Quick pass = P0 + P1. Full audit = all three.
 
@@ -180,6 +196,7 @@ And: this skill serves good writing, not the evasion of AI detectors or of discl
 11. Headings and slide titles: noun labels that name the content? → replace teaser half-sentences, colloquial sentence-titles, and question scaffolding
 12. Sentences built actor-first? → dissolve nominalizations and "es wurde" constructions into verbs with named subjects (prose only – slides stay nominal)
 13. On slides: colloquial phrases, command tone, punchline one-liners, moderator notes, or status stamps? → formalize, soften to recommendations, move notes to speaker notes, drop the stamps
+14. In a story or anecdote: realization coda, epilogue, front-loaded backstory, description-block person intro? → end on the event, pick one temporal move, let people enter through action or speech
 
 ## Output formats
 

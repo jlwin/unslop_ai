@@ -24,6 +24,7 @@ Worked examples for the main patterns, German and English. Every fix follows the
 18. Headings and slide titles
 19. Sentence construction: actor and verb
 20. The slide register
+21. Narrative arcs: endings, time, people
 
 ---
 
@@ -230,3 +231,32 @@ Cut without replacement:
 - Moderator and internal notes on the slide face – they go into the speaker notes.
 - Status stamps („Entwurf", „Final") and blanket „Vertraulich" markers – only on explicit request.
 - Redundant contrast: „A statt B" when the positive statement already excludes the alternative („externe Marktdaten" needs no „– keine internen Zahlen").
+
+
+## 21. Narrative arcs: endings, time, people
+
+For stories, anecdotes, and case studies. The realization coda is the single strongest tell; the temporal moves are the cheapest human signal.
+
+Realization coda → end on the event:
+
+- VORHER: „Der Kunde verlängerte um zwei Jahre. Und da wurde mir klar: Am Ende geht es nie um Features, sondern um Vertrauen."
+- NACHHER: „Der Kunde verlängerte um zwei Jahre. Die Feature-Liste aus dem Pitch kam im Gespräch kein einziges Mal vor."
+- BEFORE: "We shipped on Friday after all. That's when I realized that great teams aren't built in sprints, they're built in moments like these."
+- AFTER: "We shipped on Friday after all. Two people cancelled their evening plans without being asked."
+
+Front-loaded backstory → one temporal move:
+
+- VORHER: „Zur Einordnung: Wir hatten das Projekt 2024 gestartet, das Team bestand aus vier Personen, das Budget war knapp. Im März kam dann die Anfrage…"
+- NACHHER: „Die Anfrage kam an einem Mittwoch, und wir sagten zu, obwohl nichts davon fertig war. Warum wir uns das zutrauten, hat mit 2024 zu tun – dazu gleich."
+
+Description-block intro → entry through action or speech:
+
+- VORHER: „Frau Berger, seit zwölf Jahren Leiterin der Fertigung und ausgewiesene Lean-Expertin, stand dem Projekt zunächst skeptisch gegenüber."
+- NACHHER: „Frau Berger unterbrach die Demo nach zwei Minuten: ‚Und was macht die Spätschicht damit?'"
+
+Tidy ending → let one thread stay open:
+
+- VORHER: „Heute läuft der Prozess stabil, das Team ist zufrieden, und auch die Kosten sind im Rahmen. Alle Fragen von damals sind beantwortet."
+- NACHHER: „Der Prozess läuft stabil, und die Kosten sind im Rahmen. Ob das Modell auch mit dem zweiten Standort funktioniert, wissen wir im Frühjahr."
+
+Anti-convergence note: never run all of these in one piece. One or two moves, rotated across pieces – a text that opens mid-scene, quotes two people, digresses once, and ends unresolved has just traded one template for another.

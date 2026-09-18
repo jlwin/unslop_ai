@@ -1,0 +1,42 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "unslop-ai",
+  "owner": {
+    "name": "Jean-Luc Winkler",
+    "url": "https://github.com/jlwin"
+  },
+  "description": "Anti-AI-slop writing skills for Claude, German and English.",
+  "version": "1.5.0",
+  "plugins": [
+    {
+      "name": "unslop",
+      "displayName": "unslop",
+      "description": "Writing guardrail against AI slop in German and English. Works on three levels – vocabulary, sentence rhythm, discourse structure – with four modes (write, check, rewrite, edit file) and strictness profiles per register.",
+      "version": "1.5.0",
+      "source": "./",
+      "author": {
+        "name": "Jean-Luc Winkler",
+        "url": "https://github.com/jlwin"
+      },
+      "homepage": "https://github.com/jlwin/unslop_ai",
+      "repository": "https://github.com/jlwin/unslop_ai",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "writing",
+        "editing",
+        "german",
+        "style",
+        "ai-slop",
+        "prose",
+        "content"
+      ],
+      "tags": [
+        "writing",
+        "content",
+        "german",
+        "quality"
+      ]
+    }
+  ]
+}

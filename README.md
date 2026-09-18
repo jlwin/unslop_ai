@@ -2,7 +2,7 @@
 
 A writing guardrail for Claude that prevents and removes AI slop, in German and English.
 
-`unslop` is an [Agent Skill](https://agentskills.io) (a single `SKILL.md` plus two reference files) that works with Claude Code, Claude Desktop/Cowork, and any other agent that reads the SKILL.md format. It treats German prose as a first-class citizen rather than as an afterthought.
+`unslop` is an [Agent Skill](https://agentskills.io) (a single `SKILL.md` plus two reference files) that works with Claude Code, Claude Desktop/Cowork, and any other agent that reads the SKILL.md format. It ships as a Claude Code plugin as well. It treats German prose as a first-class citizen rather than as an afterthought.
 
 ## Why word filters are not enough
 
@@ -24,30 +24,38 @@ One rule runs through all three levels: swap the vague claim for the checkable f
 
 **Guardrails against the humanizer failure mode.** The classic mistake of de-slopping tools is trading one fingerprint for a new one: chopped staccato fragments, fake first-person anecdotes, performed candor („Real talk:"). This skill treats every such move as a failed rewrite. It may cut and sharpen; it may not add facts, stance, or personality the author never wrote. Human quirks and typos in source text stay where they are.
 
-**Calibrated, not dogmatic.** Rules apply per register. Fragments are native on LinkedIn and a tell in long-form prose. Hedging is a bug in marketing copy and a requirement in academic writing, where neutral precision *is* the human voice. A context-profile table (Social, Blog, Email, Docs, Academic) sets the strictness per rule.
+**Calibrated, not dogmatic.** Rules apply per register. Fragments are native on LinkedIn and a tell in long-form prose. Hedging is a bug in marketing copy and a requirement in academic writing, where neutral precision *is* the human voice. A context-profile table (Social, Blog, Email, Docs, Academic, Slides) sets the strictness per rule.
 
 ## Modes
 
 | Mode | Trigger | Behavior |
 |---|---|---|
-| **Write** | default for new text | applies the rules silently while drafting |
+| **Write** | default for new text | applies the rules while drafting, then runs the self-check against its own draft |
 | **Check** | „prüfe auf AI-Muster", *"scan this"* | flags only, grouped by severity (P0/P1/P2), changes nothing |
 | **Rewrite** | „mach das menschlicher", *"de-slop this"* | audit, cleaned version, change log, second pass on its own output |
 | **Edit file** | „bereinige draft.md direkt" | minimal in-place edits, leaves human passages untouched |
 
 ## Install
 
-**Claude Code** (global):
+**As a plugin (Claude Code, Cowork).** Two commands, and updates arrive with the version bump:
 
-```bash
-git clone https://github.com/jlwin/unslop_ai.git ~/.claude/skills/unslop
+```
+/plugin marketplace add jlwin/unslop_ai
+/plugin install unslop@unslop-ai
 ```
 
-Per project instead: clone into `.claude/skills/unslop` inside the repo.
+**As a plain skill (Claude Code).** Copy the skill folder into your skills directory:
 
-**Claude app (Desktop, Cowork, claude.ai):** zip the folder (`SKILL.md` at the archive root, `references/` beside it) and add it as a skill in your Claude settings.
+```bash
+git clone https://github.com/jlwin/unslop_ai.git /tmp/unslop_ai
+cp -r /tmp/unslop_ai/skills/unslop ~/.claude/skills/unslop
+```
 
-**Other agents:** anything that reads the agentskills `SKILL.md` format can use it as-is.
+Per project instead: copy it into `.claude/skills/unslop` inside the repository.
+
+**Claude app (Desktop, Cowork, claude.ai).** Zip the contents of `skills/unslop` (`SKILL.md` at the archive root, `references/` beside it) and add the archive as a skill in your Claude settings.
+
+**Other agents.** Anything that reads the agentskills `SKILL.md` format can use `skills/unslop` as-is.
 
 ## Usage
 
@@ -67,16 +75,18 @@ A taste of what the rewrite mode does:
 > **Before:** *"This launch stands as a powerful testament to our team's relentless pursuit of excellence."*
 > **After:** *"We shipped the export feature today. The beta group has been running it since April without a single support ticket."*
 
-More in [`references/pattern-catalog.md`](references/pattern-catalog.md): 20 pattern families, each with German and English before/after pairs.
+More in [`skills/unslop/references/pattern-catalog.md`](skills/unslop/references/pattern-catalog.md): 21 pattern families, each with German and English before/after pairs.
 
 ## Repository layout
 
 ```
-SKILL.md                        the skill: levels, modes, workflow, profiles, guardrails
-references/word-lists.md        banned and suspect vocabulary, DE + EN, tiered, plus microformats
-references/pattern-catalog.md   worked before/after examples for every pattern family
-evals/cases.md                  regression cases with expected findings
-CHANGELOG.md                    version history
+.claude-plugin/plugin.json               plugin manifest
+.claude-plugin/marketplace.json          marketplace catalog, so the repo installs as a plugin source
+skills/unslop/SKILL.md                   the skill: levels, modes, workflow, profiles, guardrails
+skills/unslop/references/word-lists.md   banned and suspect vocabulary, DE + EN, tiered, plus microformats
+skills/unslop/references/pattern-catalog.md   worked before/after examples for every pattern family
+skills/unslop/evals/cases.md             regression cases with expected findings
+skills/unslop/CHANGELOG.md               version history
 ```
 
 ## Scope and ethics

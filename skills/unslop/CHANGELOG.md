@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.6 – 2026-10-01
+
+- Colon reveals as a level-2 pattern: the staged noun phrase + colon + payoff, with the distinction from the colon that carries a list, a label, or a plain consequence
+- Interpretive metadiscourse and faux-insight setups as a level-3 pattern: asides that tell the reader how to read the text, or cast the writer as the only one who noticed
+- Aphoristic kickers: the closing maxim gets deleted, not improved; the text ends on its most concrete sentence
+- The portability test named and made operational, replacing the old self-check wording
+- Formatting follows content: headings over two-sentence sections, bullets where prose reads better
+- Rewrite mode: the size of the edit matches the amount of slop; one question about register when it would change the verdict
+- Word lists extended (faux-insight setups, reader steering, rhetorical setups, DE + EN), catalog sections 22–24, regression case 10, self-check items 15–16
+
 ## v1.5 – 2026-09-03
 
 - Narrative-content rules derived from StoryScope v6 (arXiv:2604.03136): realization codas and epilogues, ambivalence allowed to stand, one temporal move instead of front-loaded backstory, people introduced through action or speech, real quotes over narration, one untied tangent, varied intensity, sparse direct address

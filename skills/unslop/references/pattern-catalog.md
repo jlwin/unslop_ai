@@ -25,6 +25,9 @@ Worked examples for the main patterns, German and English. Every fix follows the
 19. Sentence construction: actor and verb
 20. The slide register
 21. Narrative arcs: endings, time, people
+22. Colon reveals
+23. Interpretive metadiscourse and faux-insight setups
+24. Aphoristic kickers
 
 ---
 
@@ -260,3 +263,42 @@ Tidy ending → let one thread stay open:
 - NACHHER: „Der Prozess läuft stabil, und die Kosten sind im Rahmen. Ob das Modell auch mit dem zweiten Standort funktioniert, wissen wir im Frühjahr."
 
 Anti-convergence note: never run all of these in one piece. One or two moves, rotated across pieces – a text that opens mid-scene, quotes two people, digresses once, and ends unresolved has just traded one template for another.
+
+---
+
+## 22. Colon reveals
+
+A noun phrase, a colon, a staged payoff. The colon does the drumroll that the sentence has not earned. Keep colons for lists, labels, quotations, and a consequence stated plainly.
+
+- VORHER: „Das Beste daran: Es lernt mit jedem Durchlauf."
+- NACHHER: „Mit jedem Durchlauf sinkt die Fehlerquote, zuletzt von 9 auf 4 Prozent."
+- VORHER: „Der Punkt, an dem es kippt: die zweite Freigabe."
+- NACHHER: „Bei der zweiten Freigabe bleibt der Vorgang im Schnitt vier Tage liegen."
+- BEFORE: "The detail that makes it work: a second review pass."
+- AFTER: "A second review pass catches the errors the first one waves through."
+
+Where the colon stays: „Drei Dinge fehlen noch: Budget, Termin, Ansprechpartner." The list is real, the pause is not staged.
+
+## 23. Interpretive metadiscourse and faux-insight setups
+
+Both step out of the subject. One tells the reader how much weight to give a point, the other casts the writer as the only person who noticed it. Delete the aside when the text already carries the point; put the missing fact there when it doesn't.
+
+- VORHER: „Die Frist wurde um zwei Wochen verschoben. Das ist wichtiger, als es klingt."
+- NACHHER: „Die Frist wurde um zwei Wochen verschoben. Damit fällt der Testlauf in die Inventurwoche."
+- VORHER: „Was die meisten übersehen: Ein Rollout scheitert selten an der Technik."
+- NACHHER: „Von den sechs gescheiterten Rollouts lag genau einer an der Technik."
+- BEFORE: "The tool exports to CSV. This distinction matters."
+- AFTER: "The tool exports to CSV, so the controlling team can keep its existing macros."
+- BEFORE: "Here's what nobody tells you about pricing experiments."
+- AFTER: "Three of our four pricing experiments moved revenue by less than one percent."
+
+## 24. Aphoristic kickers
+
+The closing line that lifts the point into a maxim. Delete it rather than write a better one; end on the most concrete sentence the text already has.
+
+- VORHER: „… Seitdem läuft die Übergabe ohne Rückfragen. Denn am Ende entscheidet nicht das Werkzeug, sondern die Haltung."
+- NACHHER: „… Seitdem läuft die Übergabe ohne Rückfragen."
+- VORHER: „… Die Umstellung kostete drei Wochen. Die Zukunft kommt eben nicht, sie ist längst da."
+- NACHHER: „… Die Umstellung kostete drei Wochen. Den zweiten Standort stellen wir im Januar um."
+- BEFORE: "… We cut the backlog from 240 tickets to 60. The tools change. The craft doesn't."
+- AFTER: "… We cut the backlog from 240 tickets to 60, and the two oldest tickets are still open."

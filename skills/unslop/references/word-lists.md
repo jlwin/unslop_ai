@@ -59,6 +59,10 @@ wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, 
 
 **Chat artifacts (P0):** „Gerne erstelle ich Ihnen…", „Ich hoffe, das hilft!", „Lassen Sie es mich wissen, falls…", „Selbstverständlich!", „Das ist eine gute Frage", „Ich hoffe, diese E-Mail erreicht Sie wohlbehalten" (Anglizismus-Kalk)
 
+**Faux-Insight-Aufhänger:** „Was die meisten übersehen", „Was dir niemand sagt", „Der Teil, den alle überspringen", „Was kaum jemand ausspricht", „Die unbequeme Wahrheit ist", „Hand aufs Herz:" (als Auftakt statt als Haltung)
+
+**Leser-Steuerung (Metadiskurs):** „Das ist wichtiger, als es klingt", „Entscheidend dabei:", „Wichtig zu verstehen:", „Wie man sieht", „Anders gesagt" (wenn der Satz davor schon klar war), „Merke:", „Und genau das ist der Punkt"
+
 **Engagement bait (social):** „Und das Beste daran?", „Der Clou:", „Spoiler:", „Plot Twist:", „Aber der Reihe nach.", „Doch dann kam alles anders.", 🧵, Emoji-Bullets (🚀✅💡) vor jeder Zeile, Hashtag-Blöcke ab 3 Tags
 
 ## English
@@ -107,6 +111,12 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 **Closers:** "In conclusion", "The future looks bright", "To sum up", "The bottom line is", "At the end of the day", "Only time will tell"
 
 **Chat artifacts (P0):** "Certainly!", "I hope this helps!", "Feel free to reach out", "You're absolutely right", "Great question!", "Please don't hesitate to…", "I hope this email finds you well"
+
+**Faux-insight setups:** "what nobody tells you", "the part everyone misses", "what most people get wrong", "here's what they don't say", "the uncomfortable truth is", "let me be clear"
+
+**Reader steering (metadiscourse):** "that matters more than it sounds", "this distinction matters", "the key point is", "as you can see", "in other words" (when the previous sentence was already clear), "make no mistake"
+
+**Rhetorical setups:** "What if I told you", "Think about it:", "Plot twist:", "Here's the thing:", a question answered by the next sentence as a device
 
 **Inflation phrases (corpus-measured, at up to 468× the human base rate):** "provide a valuable insight", "left an indelible mark", "play a significant role in shaping", "an unwavering commitment", "open a new avenue", "a stark reminder", "serves as a testament", "deeply rooted", "watershed moment", "marking a pivotal moment"
 

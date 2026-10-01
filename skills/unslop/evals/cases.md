@@ -112,3 +112,16 @@ EXPECTED:
 - P2: person introduced via description block instead of action or speech
 - P2: everything resolved, no open thread; flat escalation (setup → demo → signature in even beats)
 - Rewrite direction: end on the event or an open question, one temporal move, let Herr Krause enter through his own words
+
+## Case 10 – Product blog section (profile: blog)
+
+INPUT:
+> Der Export läuft jetzt auch nachts. Das ist wichtiger, als es klingt. Was die meisten übersehen: Die Nachtfenster entscheiden über den ganzen Tagesbetrieb. Das Beste daran: Es läuft ohne Zutun. Wir haben die Laufzeit halbiert, und das Team merkt es sofort. Am Ende zählt eben nicht die Technik, sondern die Zeit, die sie zurückgibt.
+
+EXPECTED:
+- P2: interpretive metadiscourse („Das ist wichtiger, als es klingt")
+- P1: faux-insight setup („Was die meisten übersehen:")
+- P1: colon reveal („Das Beste daran: …")
+- P1: aphoristic kicker in the last sentence („Am Ende zählt eben nicht …, sondern …"), which is also a negative parallelism
+- P1: vague claim without a checkable fact („halbiert" without the two figures; „merkt es sofort")
+- Rewrite direction: delete the asides, state the night window as a plain sentence, end on the concrete result instead of the maxim

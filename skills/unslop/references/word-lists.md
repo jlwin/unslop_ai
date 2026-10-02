@@ -53,15 +53,23 @@ wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, 
 
 **Openers:** „In der heutigen digitalen Welt / schnelllebigen Zeit…", „Im Zeitalter von…", „Ob Startup oder Konzern –…", „Ganz gleich, ob…", „Kennen Sie das?", „Stellen Sie sich vor,…" (als Ersatz fürs Argument), „Immer mehr Unternehmen…", „Wir alle wissen:…"
 
-**Transitions:** „Es ist wichtig zu beachten, dass", „Dabei gilt es zu berücksichtigen", „Hierbei spielt … eine entscheidende Rolle", „Doch was bedeutet das konkret?", „Werfen wir einen Blick auf", „Die Antwort lautet:", „Kurz gesagt:" (als Ritual), „Nicht nur X, sondern auch Y" (inflationär), „Von X bis Y" (Schein-Spannweite)
+**Transitions:** „Es ist wichtig zu beachten, dass", „Dabei gilt es zu berücksichtigen", „Hierbei spielt … eine entscheidende Rolle", „Doch was bedeutet das konkret?", „Werfen wir einen Blick auf", „Die Antwort lautet:", „Kurz gesagt:" (als Ritual), „Nicht nur X, sondern auch Y" (inflationär), „Von X bis Y" (Schein-Spannweite, allein schwach)
 
 **Closers:** „Fazit:" als Standard-Überschrift, „Zusammenfassend lässt sich sagen", „Unterm Strich", „Am Ende des Tages", „Es bleibt abzuwarten", „Die Zukunft bleibt spannend", „Eines steht fest:", „Denn eines ist klar:", „Sind Sie bereit für…?", „Lust auf mehr?"
 
-**Chat artifacts (P0):** „Gerne erstelle ich Ihnen…", „Ich hoffe, das hilft!", „Lassen Sie es mich wissen, falls…", „Selbstverständlich!", „Das ist eine gute Frage", „Ich hoffe, diese E-Mail erreicht Sie wohlbehalten" (Anglizismus-Kalk)
+**Chat artifacts (P0):** „Gerne erstelle ich Ihnen…", „Ich hoffe, das hilft!", „Lassen Sie es mich wissen, falls…", „Selbstverständlich!", „Das ist eine gute Frage", „Ich hoffe, diese E-Mail erreicht Sie wohlbehalten" (Anglizismus-Kalk), „Soll ich weitermachen?", „Möchtest du, dass ich …?" (am Ende eines eigenständigen Textes)
 
 **Faux-Insight-Aufhänger:** „Was die meisten übersehen", „Was dir niemand sagt", „Der Teil, den alle überspringen", „Was kaum jemand ausspricht", „Die unbequeme Wahrheit ist", „Hand aufs Herz:" (als Auftakt statt als Haltung)
 
 **Leser-Steuerung (Metadiskurs):** „Das ist wichtiger, als es klingt", „Entscheidend dabei:", „Wichtig zu verstehen:", „Wie man sieht", „Anders gesagt" (wenn der Satz davor schon klar war), „Merke:", „Und genau das ist der Punkt"
+
+**Phantom-Einwände:** „Damit will ich nicht sagen, dass…", „Versteh mich nicht falsch", „Um es klar zu sagen", „Naheliegend wäre, …, doch…", „Man könnte meinen, …", „Das heißt nicht, dass…" (wenn niemand das behauptet hat)
+
+**Inszenierte Betonung:** „Lies das nochmal.", „Lass das mal sacken.", „JEDEN. EINZELNEN. TAG.", ein einzelnes Wort in Versalien als Gewicht
+
+**Ritual-Gliederung und Füller:** „Erstens … Zweitens … Drittens" in kurzen Texten, „Hier kommt X ins Spiel", „Last but not least", „Nicht zuletzt", „Interessanterweise", „Kurz und knapp:"
+
+**Schein-Autorität und vage Bezüge:** „Bekannt aus: …" als Medienleiste, Follower-Zahlen als Beleg, „im Zusammenhang mit" / „in Verbindung mit", wenn offen bleibt, welche Rolle jemand hatte
 
 **Engagement bait (social):** „Und das Beste daran?", „Der Clou:", „Spoiler:", „Plot Twist:", „Aber der Reihe nach.", „Doch dann kam alles anders.", 🧵, Emoji-Bullets (🚀✅💡) vor jeder Zeile, Hashtag-Blöcke ab 3 Tags
 
@@ -110,13 +118,23 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 
 **Closers:** "In conclusion", "The future looks bright", "To sum up", "The bottom line is", "At the end of the day", "Only time will tell"
 
-**Chat artifacts (P0):** "Certainly!", "I hope this helps!", "Feel free to reach out", "You're absolutely right", "Great question!", "Please don't hesitate to…", "I hope this email finds you well"
+**Chat artifacts (P0):** "Certainly!", "I hope this helps!", "Feel free to reach out", "You're absolutely right", "Great question!", "Please don't hesitate to…", "I hope this email finds you well", "Absolutely!", "Sure!", "I'd be happy to…", "That's a great point!", "As an AI…", "Would you like me to…?", "Should I continue?"
 
 **Faux-insight setups:** "what nobody tells you", "the part everyone misses", "what most people get wrong", "here's what they don't say", "the uncomfortable truth is", "let me be clear"
 
 **Reader steering (metadiscourse):** "that matters more than it sounds", "this distinction matters", "the key point is", "as you can see", "in other words" (when the previous sentence was already clear), "make no mistake"
 
 **Rhetorical setups:** "What if I told you", "Think about it:", "Plot twist:", "Here's the thing:", a question answered by the next sentence as a device
+
+**Phantom objections:** "To be clear", "I'm not saying", "Don't get me wrong", "This isn't to say", "A tempting approach would be", "You might think… but"
+
+**Staged emphasis:** "Read that again.", "Let that sink in.", "every. single. day.", one word in capitals for weight
+
+**Stock phrases:** "bridge the gap", "move the needle", "take it to the next level", "buckle up", "in a nutshell", "this is where X comes in", "without further ado", "as per my last email", "firstly… secondly… thirdly…" in short pieces; sentence-opening "Interestingly,", "Importantly,", "Indeed,", "Overall,", "Additionally,"
+
+**Words:** "quietly" (as drama), "garner", "enduring", "align with", "key" as filler adjective, "gate/gated/gating" used figuratively (technical uses stay)
+
+**Vague association:** "associated with", "in connection with", "linked to", "tied to", when the relationship stays unnamed
 
 **Inflation phrases (corpus-measured, at up to 468× the human base rate):** "provide a valuable insight", "left an indelible mark", "play a significant role in shaping", "an unwavering commitment", "open a new avenue", "a stark reminder", "serves as a testament", "deeply rooted", "watershed moment", "marking a pivotal moment"
 
@@ -138,4 +156,4 @@ Wrong locale conventions read as pasted-from-a-US-tool. Individually P2; mixed c
 - Dates: „24.08.2026" or „24. August 2026" – never „08/24/2026" or „2026-08-24" in running prose (ISO stays fine in tables and file names)
 - Quotation marks: „deutsche" – straight "US quotes" in an otherwise typeset German text are a paste signal (see section above)
 
-**English documents:** the inverse conventions apply (50%, 3.2, 10,000, $40 / €40 before or after per style, Aug 24, 2026). The flag in both languages is the same: two conventions mixed in one document.
+**English documents:** the inverse conventions apply (50%, 3.2, 10,000, $40 / €40 before or after per style, Aug 24, 2026). The flag in both languages is the same: two conventions mixed in one document. Compound modifiers keep the hyphen before the noun and drop it after it ("a high-quality report", "the report is high quality"); dictionary compounds such as "third-party" keep it everywhere. Weak alone.

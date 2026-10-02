@@ -1,6 +1,6 @@
 # Pattern catalog: before/after
 
-Worked examples for the main patterns, German and English. Every fix follows the same principle: swap the vague claim for the checkable fact that already sits in the source, or name the gap. Never invent facts.
+Worked examples for the main patterns, German and English. Every fix follows the same principle: swap the vague claim for the checkable fact that already sits in the source, or name the gap. Never invent facts. Where an AFTER line contains a figure, name, or date the BEFORE line lacks, read it as a stand-in for the fact the real source provides; in a real rewrite without that fact, flag the gap instead. Sections 25–27 show the stricter form: every AFTER keeps the facts of its BEFORE and adds none.
 
 ## Contents
 
@@ -28,6 +28,9 @@ Worked examples for the main patterns, German and English. Every fix follows the
 22. Colon reveals
 23. Interpretive metadiscourse and faux-insight setups
 24. Aphoristic kickers
+25. Phantom objections
+26. Text about itself
+27. Replies that rebuild context
 
 ---
 
@@ -302,3 +305,37 @@ The closing line that lifts the point into a maxim. Delete it rather than write 
 - NACHHER: „… Die Umstellung kostete drei Wochen. Den zweiten Standort stellen wir im Januar um."
 - BEFORE: "… We cut the backlog from 240 tickets to 60. The tools change. The craft doesn't."
 - AFTER: "… We cut the backlog from 240 tickets to 60, and the two oldest tickets are still open."
+
+## 25. Phantom objections
+
+The text answers a claim nobody made, or rejects an option nobody proposed. Delete the defensive move; whatever real claim it contains gets said directly.
+
+- VORHER: „Versteh mich nicht falsch: Ich bin kein Gegner von Meetings. Und damit will ich nicht sagen, dass Abstimmung unwichtig ist. Aber unser Montagstermin dauert 90 Minuten."
+- NACHHER: „Unser Montagstermin dauert 90 Minuten."
+- BEFORE: "Backups run nightly. A tempting approach would be to copy the whole volume each time, but that would fill the disk within a week. Instead, only changed blocks are copied."
+- AFTER: "Backups run nightly and copy only the blocks that changed."
+
+Where the objection stays: „Der Betriebsrat hat gefragt, ob das Tool Arbeitszeiten auswertet. Es tut das nicht; erfasst werden nur Ticketstatus und Bearbeitungsdauer." The objection is attributed and answered.
+
+## 26. Text about itself
+
+The document narrates how it was made or how it is laid out, instead of saying something about its subject. Keep a source the reader can follow and a caveat that changes what they do.
+
+- VORHER: „Für diese Übersicht haben wir die Websites aller fünf Anbieter ausgewertet und die Angaben in die folgende Tabelle übertragen. Die Tabelle ist nach Preis sortiert."
+- NACHHER: „Preise laut Website der fünf Anbieter."
+- BEFORE: "This endpoint was added to replace the old polling approach, which caused unnecessary load."
+- AFTER: "Clients get updates from this endpoint instead of polling, which keeps the load down."
+
+Heading echo, same family:
+
+- VORHER: „## Onboarding / Das Onboarding ist entscheidend. Neue Kolleginnen bekommen am ersten Tag…"
+- NACHHER: „## Onboarding / Neue Kolleginnen bekommen am ersten Tag…"
+
+## 27. Replies that rebuild context
+
+In a reply, the reader already has the background. Lead with the decision; keep the one fact they lack and the reasoning that would change their answer.
+
+- VORHER: „Danke für deine Nachricht zum Release. Wie du weißt, hatten wir ja ursprünglich den 14. geplant, und dann kam die Sache mit der Schnittstelle dazu, die wir letzte Woche besprochen haben. Ich habe mir das nochmal angeschaut, mit Tom gesprochen und die Tests durchgesehen: Die Schnittstelle läuft noch nicht stabil. Unterm Strich würde ich vorschlagen, dass wir auf den 21. gehen."
+- NACHHER: „Ich schlage den 21. statt des 14. vor: Die Schnittstelle läuft in den Tests noch nicht stabil."
+- BEFORE: "Thanks for flagging this. To recap: the import failed on Tuesday because the CSV had a new column, which broke the parser, and I traced it back to the vendor's export change. Given all that, I think we should pin the column order."
+- AFTER: "Let's pin the column order in the parser. Tuesday's import broke because the vendor's export added a column."

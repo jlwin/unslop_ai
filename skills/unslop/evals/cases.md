@@ -125,3 +125,25 @@ EXPECTED:
 - P1: aphoristic kicker in the last sentence („Am Ende zählt eben nicht …, sondern …"), which is also a negative parallelism
 - P1: vague claim without a checkable fact („halbiert" without the two figures; „merkt es sofort")
 - Rewrite direction: delete the asides, state the night window as a plain sentence, end on the concrete result instead of the maxim
+
+## Case 11 – Email reply (profile: email)
+
+INPUT:
+> Hallo Petra, danke für deine Rückfrage zum Angebot. Wie du ja weißt, hatten wir im Juli über drei Varianten gesprochen, und damals war noch offen, ob die Wartung mit drin sein soll. Versteh mich nicht falsch, ich finde alle drei Varianten sinnvoll. Für diese Antwort habe ich die Unterlagen nochmal durchgesehen und mit dem Vertrieb abgestimmt. Lies das nochmal: Die Wartung ist ab sofort JEDES Jahr inklusive. Unterm Strich empfehle ich Variante B. Viele Grüße, Lars
+
+EXPECTED:
+- P2: reply rebuilds context the reader already has; the decision (Variante B) arrives last
+- P1: phantom objection („Versteh mich nicht falsch …")
+- P2: text about itself („Für diese Antwort habe ich … durchgesehen …")
+- P1: staged emphasis („Lies das nochmal:", „JEDES")
+- P1: word-list hit („Unterm Strich")
+- Must NOT flag: the salutation and the sign-off
+- Rewrite direction: open with the recommendation, keep the one fact Petra lacks (maintenance now included every year), drop the recap
+
+## Case 12 – Weak signals only (profile: blog) — MUST STAY CLEAN
+
+INPUT:
+> Seit März messen wir die Ladezeiten jeden Morgen um 8 Uhr – die Werte schwanken zwischen 1,2 und 1,9 Sekunden. Vielleicht liegt das am CDN, sicher wissen wir es noch nicht. Die Messung wurde von Jana aufgesetzt; die Kollegin pflegt das Skript seitdem allein.
+
+EXPECTED:
+- No findings. One dash, one honest hedge, one passive sentence and one synonym change („Jana" / „die Kollegin") are weak signals that occur in human writing; none of them clusters with another tell here. Flagging any of them is a regression.

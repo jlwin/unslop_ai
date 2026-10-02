@@ -75,7 +75,7 @@ A taste of what the rewrite mode does:
 > **Before:** *"This launch stands as a powerful testament to our team's relentless pursuit of excellence."*
 > **After:** *"We shipped the export feature today. The beta group has been running it since April without a single support ticket."*
 
-More in [`skills/unslop/references/pattern-catalog.md`](skills/unslop/references/pattern-catalog.md): 24 pattern families, each with German and English before/after pairs.
+More in [`skills/unslop/references/pattern-catalog.md`](skills/unslop/references/pattern-catalog.md): 27 pattern families, each with German and English before/after pairs.
 
 ## Repository layout
 

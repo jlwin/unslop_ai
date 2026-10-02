@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.7 – 2026-10-02
+
+- Weak-alone calibration: single dashes, one hedge, one passive, one synonym change, "von X bis Y" spans and similar signals count only when they cluster; synonym variation downgraded accordingly
+- New guardrail "No silent loss": a rewrite that drops a supported fact, ranking, or simultaneity has failed
+- New level-3 patterns: phantom objections, text about itself (method and layout narration, heading echo), replies that rebuild context the reader already has
+- New level-2 patterns: repeated sentence openings, staged emphasis (capitals, dotted words, "Read that again")
+- Extended: negative parallelism (reversed form, clipped negative tail), paragraph-scale triads, prestige lists and vague association, stock "challenges and outlook" sections, mid-text aphorisms, speculation dressed as background (P0)
+- Embedded use: when another skill calls unslop as its quality pass, return only the corrected text; a user's own writing sample overrides the generic budgets
+- Check mode judges patterns, never authorship
+- Word lists extended (DE + EN), English hyphenation microformat, catalog sections 25–27, regression cases 11 and 12, self-check items 17–18
+
 ## v1.6 – 2026-10-01
 
 - Colon reveals as a level-2 pattern: the staged noun phrase + colon + payoff, with the distinction from the colon that carries a list, a label, or a plain consequence

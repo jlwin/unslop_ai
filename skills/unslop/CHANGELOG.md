@@ -2,19 +2,21 @@
 
 ## v1.8.1 – 2026-10-05
 
-- Aligned the short version, severity list, and self-check with register profiles, vocabulary tiers, permitted triads and contrasts, meaningful participle tails, action titles, and required summaries; stock phrases use their rule’s severity; check mode continues to flag without editing
+- Aligned the short version, severity list, and self-check with register profiles, vocabulary tiers, permitted triads and contrasts, meaningful participle tails, action titles, and required summaries; stock phrases use their rule's severity; check mode continues to flag without editing
 - Clarified weak-alone calibration: co-occurring legitimate choices do not automatically form a defect; sentence length needs repetitive construction, and a single passive with a known or irrelevant actor stays
-- Removed the self-check’s hypothetical-detail loophole; factual gaps stay separate from the deliverable, including embedded quality passes, and relative measurements such as „halbiert“ retain their strength
+- Removed the self-check's hypothetical-detail loophole; factual gaps stay separate from the deliverable, including embedded quality passes, and relative measurements such as „halbiert“ retain their strength
 - Removed authorship verdicts from check/workflow wording and leak guidance; ordinary salutations, sign-offs, recipient questions, and numbered instructions stay protected
 - Merged template-scaffolding guidance into the heading rule; removed the duplicate English „crucial“ tier entry while keeping its inflated Tier-1 use
-- Repaired the dangling bold-formatting reference (catalog section 11) and quotation-mark reference (section 16); aligned the catalog’s dash budget with SKILL.md and limited the slide prohibition to em dashes
+- Repaired the dangling bold-formatting reference (catalog section 11) and quotation-mark reference (section 16); aligned the catalog's dash budget with SKILL.md and limited the slide prohibition to em dashes
 - Repaired source-unsupported facts, figures, names, dates, mechanisms, and feelings in catalog sections 1–13 and 17–24; removed the stand-in-fact exception and used explicit audit gaps where no faithful rewrite is possible
 - Corrected additional content loss or invented specificity in sections 25–29: backup consequences, provider sources and price sorting, endpoint load, release-test attribution, parser failure, slogan comparisons and counts, migration assessment, and preview–recap headings
 - Kept slide warnings at their original strength, preserved „immer“ as „vor jedem Versand“, and required source support for academic claim-strength changes and named actors
 - Corrected German quotation marks and nested quotes in rules and examples; kept deliberately defective typography and clean human input unchanged, and clarified that colon capitalization alone is not a tell
-- Updated eval severities and expectations for closers, copulas, valid en dashes, vocabulary clusters, missing title roles, narrative gaps, false agency, relative measurements, and reply reasoning; cases 6, 12 and 14 remain mandatory clean cases
+- Updated eval severities and expectations for closers, copulas, valid en dashes, vocabulary clusters, missing title roles, narrative gaps, false agency, relative measurements, and reply reasoning
 - Added cases 15–18 for protected technical vocabulary and participle conditions, meaningful three-part lists, unsupported evidence gaps, and slide-face versus speaker-note punctuation
-- Repaired the two README rewrite examples to avoid invented facts; retained the 30-family count, corrected the claim that each family has both language pairs, and removed the unsupported total-rule count
+- Rebuilt the two README rewrite examples so every fact in the After line comes from the Before line; retained the 30-family count, corrected the claim that each family has both language pairs, and removed the unsupported total-rule count
+- Catalog follow-ups: the template-balance AFTER no longer repeats the concession it is meant to remove, the tidy-ending example now shows an open thread kept from the source, and the endpoint example states the replacement as a fact again
+- Cases 15 and 16 join 6, 12 and 14 as mandatory clean cases; reordered a few stock-phrase lists and reworded one eval input
 - Bumped the plugin version and both marketplace versions to 1.8.1; retained the frontmatter name, description triggers, file layout, and Markdown-only skill
 
 ## v1.8 – 2026-10-05

@@ -1,6 +1,6 @@
 # Pattern catalog: before/after
 
-Worked examples for the main patterns, German and English. Every fix follows the same principle: swap the vague claim for the checkable fact that already sits in the source, or name the gap. Never invent facts. Where an AFTER line contains a figure, name, or date the BEFORE line lacks, read it as a stand-in for the fact the real source provides; in a real rewrite without that fact, flag the gap instead. Sections 25–27 show the stricter form: every AFTER keeps the facts of its BEFORE and adds none.
+Worked examples for the main patterns, German and English. Every fix follows the same principle: swap the vague claim for the checkable fact that already sits in the source, or name the gap. Never invent facts. Where an AFTER line contains a figure, name, or date the BEFORE line lacks, read it as a stand-in for the fact the real source provides; in a real rewrite without that fact, flag the gap instead. Sections 25–30 show the stricter form: every AFTER keeps the facts of its BEFORE and adds none.
 
 ## Contents
 
@@ -31,6 +31,9 @@ Worked examples for the main patterns, German and English. Every fix follows the
 25. Phantom objections
 26. Text about itself
 27. Replies that rebuild context
+28. Slogan cadence and false agency
+29. Template balance and preview–recap
+30. Meaning at the same strength
 
 ---
 
@@ -339,3 +342,36 @@ In a reply, the reader already has the background. Lead with the decision; keep 
 - NACHHER: „Ich schlage den 21. statt des 14. vor: Die Schnittstelle läuft in den Tests noch nicht stabil."
 - BEFORE: "Thanks for flagging this. To recap: the import failed on Tuesday because the CSV had a new column, which broke the parser, and I traced it back to the vendor's export change. Given all that, I think we should pin the column order."
 - AFTER: "Let's pin the column order in the parser. Tuesday's import broke because the vendor's export added a column."
+
+## 28. Slogan cadence and false agency
+
+One clipped slogan is voice; the third in a document is a template. Things that speak or decide stand in for a claim the writer did not make.
+
+- VORHER: „## Weniger tippen. Mehr verkaufen. … ## Ein Login. Drei Systeme. … ## Einmal einrichten. Fertig."
+- NACHHER: „## Angebotserstellung … ## Single Sign-on für CRM, ERP und Shop … ## Einrichtung"
+- VORHER: „Die Zahlen sprechen für sich: 2025 lag der Umsatz bei 4,1 Mio. Euro, 2026 bei 6,3 Mio. Euro."
+- NACHHER: „Der Umsatz stieg von 4,1 Mio. Euro (2025) auf 6,3 Mio. Euro (2026)."
+- BEFORE: "The router decides which model answers each request."
+- AFTER: "The router assigns each request to a model." (Flag the missing mechanism: the source never says how.)
+
+## 29. Template balance and preview–recap
+
+The concession that weighs nothing, the both-sides frame without a verdict, and the outline delivered three times.
+
+- VORHER: „Obwohl die Migration vielversprechend ist, bleibt die Datenqualität eine Herausforderung."
+- NACHHER: „Bei der Migration ist die Datenqualität noch ungelöst." (Flag the gap: which data, how many records, by when.)
+- VORHER: „In diesem Beitrag schauen wir uns drei Punkte an: Kosten, Aufwand und Risiken. [… drei Abschnitte …] Zusammenfassend haben wir Kosten, Aufwand und Risiken betrachtet."
+- NACHHER: „[drei Abschnitte mit den Überschriften Kostenvergleich, Umstellungsaufwand, Ausfallrisiken; der Text endet mit dem letzten Risiko]"
+
+## 30. Meaning at the same strength
+
+Wrong rewrites from this catalog's own rules, shown so the failure is recognizable. Each VORHER is the source; each FALSCH is a de-slopped version that changed what the source says.
+
+- VORHER: „Der Ausfall wurde durch das Update vom 3. März verursacht."
+- FALSCH: „Das Update vom 3. März hat den Ausfall beeinflusst." (cause weakened)
+- VORHER: „Rund 50 % der Teams nutzen die Vorlage."
+- FALSCH: „50 % der Teams nutzen die Vorlage." (approximation turned into precision)
+- VORHER: „Das Medikament kann bei einigen Patienten Schwindel verursachen."
+- FALSCH: „Das Medikament verursacht Schwindel." (load-bearing hedge and scope removed)
+- BEFORE: "Users must never store API keys in client-side code."
+- WRONG: "Avoid storing API keys in client-side code." (security absolute softened)

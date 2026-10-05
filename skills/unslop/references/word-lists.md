@@ -57,7 +57,7 @@ wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, 
 
 **Closers:** „Fazit:" als Standard-Überschrift, „Zusammenfassend lässt sich sagen", „Unterm Strich", „Am Ende des Tages", „Es bleibt abzuwarten", „Die Zukunft bleibt spannend", „Eines steht fest:", „Denn eines ist klar:", „Sind Sie bereit für…?", „Lust auf mehr?"
 
-**Chat artifacts (P0):** „Gerne erstelle ich Ihnen…", „Ich hoffe, das hilft!", „Lassen Sie es mich wissen, falls…", „Selbstverständlich!", „Das ist eine gute Frage", „Ich hoffe, diese E-Mail erreicht Sie wohlbehalten" (Anglizismus-Kalk), „Soll ich weitermachen?", „Möchtest du, dass ich …?" (am Ende eines eigenständigen Textes)
+**Chat artifacts (P0):** „Gerne erstelle ich Ihnen…", „Ich hoffe, das hilft!", „Lassen Sie es mich wissen, falls…", „Selbstverständlich!", „Das ist eine gute Frage", „Ich hoffe, diese E-Mail erreicht Sie wohlbehalten" (Anglizismus-Kalk), „Soll ich weitermachen?", „Möchtest du, dass ich …?" (am Ende eines eigenständigen Textes), Denk- und Prompt-Echos: „Gehen wir das Schritt für Schritt durch", „Gehen wir das systematisch an", „Du fragst also, ob …", „Um deine Frage zu beantworten"
 
 **Faux-Insight-Aufhänger:** „Was die meisten übersehen", „Was dir niemand sagt", „Der Teil, den alle überspringen", „Was kaum jemand ausspricht", „Die unbequeme Wahrheit ist", „Hand aufs Herz:" (als Auftakt statt als Haltung)
 
@@ -70,6 +70,10 @@ wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, 
 **Ritual-Gliederung und Füller:** „Erstens … Zweitens … Drittens" in kurzen Texten, „Hier kommt X ins Spiel", „Last but not least", „Nicht zuletzt", „Interessanterweise", „Kurz und knapp:"
 
 **Schein-Autorität und vage Bezüge:** „Bekannt aus: …" als Medienleiste, Follower-Zahlen als Beleg, „im Zusammenhang mit" / „in Verbindung mit", wenn offen bleibt, welche Rolle jemand hatte
+
+**Schein-Agenten:** „Die Zahlen sprechen für sich", „Die Daten erzählen eine Geschichte", „zeichnet ein klares Bild", „Das Tool entscheidet selbst", „Die KI weiß, was du brauchst"
+
+**Slogan- und Bilanzschablonen:** „Weniger X. Mehr Y.", „Ein Tool, drei Abteilungen.", „Obwohl X vielversprechend ist, bleibt Y eine Herausforderung", „Einerseits … andererseits …" ohne Fazit, „Der Druck ist real.", „Drei zentrale Erkenntnisse", „5 Dinge, die du wissen musst", „In diesem Beitrag schauen wir uns … an"
 
 **Engagement bait (social):** „Und das Beste daran?", „Der Clou:", „Spoiler:", „Plot Twist:", „Aber der Reihe nach.", „Doch dann kam alles anders.", 🧵, Emoji-Bullets (🚀✅💡) vor jeder Zeile, Hashtag-Blöcke ab 3 Tags
 
@@ -118,7 +122,7 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 
 **Closers:** "In conclusion", "The future looks bright", "To sum up", "The bottom line is", "At the end of the day", "Only time will tell"
 
-**Chat artifacts (P0):** "Certainly!", "I hope this helps!", "Feel free to reach out", "You're absolutely right", "Great question!", "Please don't hesitate to…", "I hope this email finds you well", "Absolutely!", "Sure!", "I'd be happy to…", "That's a great point!", "As an AI…", "Would you like me to…?", "Should I continue?"
+**Chat artifacts (P0):** "Certainly!", "I hope this helps!", "Feel free to reach out", "You're absolutely right", "Great question!", "Please don't hesitate to…", "I hope this email finds you well", "Absolutely!", "Sure!", "I'd be happy to…", "That's a great point!", "As an AI…", "Would you like me to…?", "Should I continue?", reasoning and prompt echoes: "Let me think step by step", "Breaking this down", "Here's my thought process", "You're asking about", "To answer your question"
 
 **Faux-insight setups:** "what nobody tells you", "the part everyone misses", "what most people get wrong", "here's what they don't say", "the uncomfortable truth is", "let me be clear"
 
@@ -135,6 +139,12 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 **Words:** "quietly" (as drama), "garner", "enduring", "align with", "key" as filler adjective, "gate/gated/gating" used figuratively (technical uses stay)
 
 **Vague association:** "associated with", "in connection with", "linked to", "tied to", when the relationship stays unnamed
+
+**False agency and template balance:** "the data tells a story", "paints a clear picture", "the numbers speak for themselves", "While X shows promise, Y remains a challenge", "on one hand … on the other hand" without a verdict, "The struggle is real.", "three key takeaways", "In this article, we will explore"
+
+**Business collocations:** "circle back", "low-hanging fruit", "navigate challenges", "leverage synergies"
+
+**Academic excess:** "delineate", "unveil", "invaluable", "noteworthy", "shed new light on", "holds great promise", "opens new avenues"
 
 **Inflation phrases (corpus-measured, at up to 468× the human base rate):** "provide a valuable insight", "left an indelible mark", "play a significant role in shaping", "an unwavering commitment", "open a new avenue", "a stark reminder", "serves as a testament", "deeply rooted", "watershed moment", "marking a pivotal moment"
 

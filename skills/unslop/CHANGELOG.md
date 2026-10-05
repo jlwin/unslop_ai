@@ -16,7 +16,7 @@
 - Added cases 15–18 for protected technical vocabulary and participle conditions, meaningful three-part lists, unsupported evidence gaps, and slide-face versus speaker-note punctuation
 - Rebuilt the two README rewrite examples so every fact in the After line comes from the Before line; retained the 30-family count, corrected the claim that each family has both language pairs, and removed the unsupported total-rule count
 - Catalog follow-ups: the template-balance AFTER no longer repeats the concession it is meant to remove, the tidy-ending example now shows an open thread kept from the source, and the endpoint example states the replacement as a fact again
-- Cases 15 and 16 join 6, 12 and 14 as mandatory clean cases; reordered a few stock-phrase lists and reworded one eval input
+- Cases 15 and 16 join 6, 12 and 14 as mandatory clean cases; reordered a few stock-phrase lists and reworded two eval inputs and two explanatory sentences
 - Bumped the plugin version and both marketplace versions to 1.8.1; retained the frontmatter name, description triggers, file layout, and Markdown-only skill
 
 ## v1.8 – 2026-10-05

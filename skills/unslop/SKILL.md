@@ -138,7 +138,7 @@ These rules apply wherever the text tells a story – the LinkedIn anecdote, the
 - **Vary the intensity.** Flat, even escalation from start to finish is a model fingerprint. Give the piece one peak and let other passages sit lower; not every beat deserves the same weight. The same applies to atmosphere: sensory scene-painting as default texture (81 % embodied-emotion rate vs. 38 %) is filler unless one moment has earned it.
 - **Address the reader only where it's real.** People acknowledge the reading situation far more often than models (direct address: 28 % vs. 7 %) – „wer nur die Zahl braucht: dritter Absatz“. Used once, it reads human; used as a recurring device, it becomes the next template.
 
-The anti-convergence rule governs all of this: the five major models cluster in one narrow structural region, while human pieces scatter – rarity itself is the human signal. So never apply this list as a checklist. Pick one or two moves per piece, vary them across pieces, and be able to say why this piece got this shape.
+The anti-convergence rule governs all of this: the five major models cluster in one narrow structural region, while human pieces scatter – rarity itself is the human signal. So never apply this list as a checklist. Pick one or two moves per piece, rotate them from piece to piece, and know the reason each piece has the shape it has.
 
 ## Context profiles
 

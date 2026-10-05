@@ -1,6 +1,6 @@
 # Regression cases
 
-How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12 and 14 must come back clean; flagging it is a regression (overflagging counts as failure). All content is invented.
+How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12, 14, 15 and 16 must come back clean; flagging any of them is a regression (overflagging counts as failure). All content is invented.
 
 ## Case 1 – German LinkedIn post (profile: social)
 
@@ -19,7 +19,7 @@ EXPECTED:
 ## Case 2 – English blog paragraph (profile: blog)
 
 INPUT:
-> Let's delve into the ever-evolving landscape of workplace learning. Modern platforms serve as a testament to seamless innovation—empowering teams to unlock their full potential. It's not just training, it's transformation. Studies show that companies investing in learning outperform their peers.
+> Let's delve into the rapidly evolving landscape of workplace learning. Modern platforms serve as a testament to seamless innovation—empowering teams to unlock their full potential. It's not just training, it's transformation. Studies show that companies investing in learning outperform their peers.
 
 EXPECTED:
 - P1: Tier-1 hits (delve, ever-evolving landscape, serves as a testament, seamless, empower, unlock potential)
@@ -143,7 +143,7 @@ EXPECTED:
 - P1: staged emphasis („Lies das nochmal:“, „JEDES“)
 - P1: word-list hit („Unterm Strich“)
 - Must NOT flag: the salutation and the sign-off
-- Rewrite direction: open with the recommendation, keep maintenance now included every year and any reasoning that changes Petra’s decision; drop only the redundant recap and work narration.
+- Rewrite direction: open with the recommendation, keep maintenance now included every year and any reasoning that changes Petra's decision; drop only the redundant recap and work narration.
 
 ## Case 12 – Weak signals only (profile: blog) — MUST STAY CLEAN
 
@@ -178,14 +178,13 @@ INPUT:
 EXPECTED:
 - No findings. The absolute („niemals“), the hedge and scope („kann“, „bei einigen Patienten“), the corrected figure („40 %, nicht 4 %“) and the technical verbs („liest“, „schlägt fehl“) are load-bearing or exempt. Flagging, softening, or strengthening any of them is a regression.
 
-
 ## Case 15 – Protected vocabulary and tail (profile: docs) — MUST STAY CLEAN
 
 INPUT:
 > The structure must remain robust under the specified load. The parser rejects rows exceeding 4,096 characters.
 
 EXPECTED:
-- No findings. “Robust” has a real technical meaning; the participle phrase states the rejection condition rather than performing analysis. Neither term may be mechanically cut by the self-check.
+- No findings. "Robust" has a real technical meaning; the participle phrase states the rejection condition rather than performing analysis. Neither term may be mechanically cut by the self-check.
 
 ## Case 16 – Supported three-part meaning (profile: docs) — MUST STAY CLEAN
 
@@ -203,7 +202,7 @@ INPUT:
 EXPECTED:
 - P1: significance inflation („unterstreicht unser Engagement“)
 - P0: unsourced vague attribution („Studien zeigen“)
-- Rewrite constraint: flag the source gap. Do not invent a study, absolute timings, an actor, or a date; preserve the halving claim’s strength if retained pending evidence.
+- Rewrite constraint: flag the source gap. Do not invent a study, absolute timings, an actor, or a date; preserve the halving claim's strength if retained pending evidence.
 
 ## Case 18 – Same punctuation, different surface (profile: slides, notes: prose)
 

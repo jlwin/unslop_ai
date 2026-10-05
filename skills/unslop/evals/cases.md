@@ -83,7 +83,7 @@ EXPECTED:
 ## Case 7 – Academic abstract (profile: academic)
 
 INPUT:
-> Our novel framework significantly outperforms all existing approaches and proves that transfer learning is universally superior. Extensive experiments on a wide range of datasets demonstrate groundbreaking results. The data suggest that latency may depend on batch size.
+> Our novel framework significantly outperforms all existing approaches and proves that transfer learning is universally superior. Extensive experiments across numerous datasets demonstrate groundbreaking results. The data suggest that latency may depend on batch size.
 
 EXPECTED:
 - P1: overclaiming verbs (proves, universally superior) without evidence pointers

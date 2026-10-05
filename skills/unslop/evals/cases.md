@@ -1,6 +1,6 @@
 # Regression cases
 
-How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Case 6 must come back clean; flagging it is a regression (overflagging counts as failure). All content is invented.
+How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12 and 14 must come back clean; flagging it is a regression (overflagging counts as failure). All content is invented.
 
 ## Case 1 – German LinkedIn post (profile: social)
 
@@ -8,12 +8,13 @@ INPUT:
 > In der heutigen schnelllebigen Arbeitswelt ist Weiterbildung ein echter Gamechanger. Es geht nicht um Tools. Es geht nicht um Prozesse. Es geht um Menschen. Unser neues Programm ist praxisnah, flexibel und nachhaltig – ein nahtloses Lernerlebnis, das Potenziale entfesselt. Die Zukunft bleibt spannend!
 
 EXPECTED:
-- P1: formulaic opener („In der heutigen schnelllebigen…")
+- P1: formulaic opener („In der heutigen schnelllebigen…“)
 - P1: negative parallelism, stacked multi-negation
 - P1: adjective triad
 - P1: Tier-1 word hits (Gamechanger, nahtlos, Potenziale entfesseln)
-- P1: generic closer („Die Zukunft bleibt spannend")
-- Note: em dash / spaced dash usage worth flagging alongside
+- P2: generic closer („Die Zukunft bleibt spannend“)
+- P1: Tier-2 cluster (praxisnah, flexibel, nachhaltig as universal praise)
+- Must NOT flag: the correctly spaced German en dash in the social profile.
 
 ## Case 2 – English blog paragraph (profile: blog)
 
@@ -23,9 +24,9 @@ INPUT:
 EXPECTED:
 - P1: Tier-1 hits (delve, ever-evolving landscape, serves as a testament, seamless, empower, unlock potential)
 - P1: negative parallelism ("It's not just X, it's Y")
-- P1: copula avoidance ("serve as")
+- P2: copula avoidance ("serve as"); the inflated stock phrase separately warrants P1
 - P0: unsourced vague attribution ("Studies show")
-- P1: em dash without need
+- P1: em-dash frequency in this short blog passage, corroborated by the stock-phrase cluster
 
 ## Case 3 – Slide titles (profile: slides)
 
@@ -38,8 +39,8 @@ INPUT (title sequence of a deck):
 
 EXPECTED:
 - P1: teaser half-sentence titles (1, 2)
-- P1: colloquial sentence title (3) → noun label ("Funktionsweise" pattern)
-- P1: bare topic label without function (4) → compound noun pattern
+- P1: colloquial sentence title (3) → noun label („Funktionsweise“ pattern)
+- P1: bare topic label without function (4); flag the missing role rather than inventing a comparison
 - P1: question-as-scaffolding closer title (5)
 - P1: title sequence does not carry a storyline on its own
 
@@ -53,7 +54,7 @@ INPUT (single slide, status footer included):
 > Status: Entwurf – Vertraulich
 
 EXPECTED:
-- P1: colloquial register on the slide face (Mitmachen, „wir fangen bei null an")
+- P1: colloquial register on the slide face (Mitmachen, „wir fangen bei null an“)
 - P1: em dash on a slide (zero budget)
 - P1: command tone instead of recommendation
 - P0: moderator note on the slide face
@@ -65,9 +66,10 @@ INPUT:
 > Im Rahmen der Durchführung der Umstellung erfolgte eine Optimierung der Abläufe durch das Projektteam. Es wurde entschieden, dass eine Verbesserung der Reaktionszeiten realisiert werden soll, wobei die Umsetzung der Maßnahmen zeitnah vorgenommen wird.
 
 EXPECTED:
-- P2: nominalization chains („Durchführung der Umstellung", „-ung + erfolgen/vornehmen")
-- P2: empty subject („Es wurde entschieden")
-- P1/P2: clause stacking („wobei…") and vague „zeitnah" without a date
+- P2: nominalization chains („Durchführung der Umstellung“, „-ung + erfolgen/vornehmen“)
+- P2: empty subject („Es wurde entschieden“)
+- P2: clause stacking („wobei…“)
+- P1: Tier-2 cluster (Optimierung, zeitnah); flag the missing timing without inventing a date
 - Rewrite direction: actor-first sentences with verbs
 
 ## Case 6 – Clean human email (profile: email) — MUST STAY CLEAN
@@ -107,11 +109,12 @@ INPUT:
 > Zur Einordnung: Unser Team betreut seit 2023 rund 40 Mittelständler, meist mit knappen IT-Ressourcen. Letzten Monat rief ein Geschäftsführer an. Herr Krause, seit 20 Jahren Inhaber eines Familienbetriebs und ein erfahrener Kaufmann, war zunächst skeptisch. Wir zeigten ihm das System, er testete es, und am Ende unterschrieb er. Heute läuft alles stabil, das Team ist zufrieden, und alle offenen Fragen sind geklärt. Und da wurde mir klar: Am Ende zählt nicht die Technik, sondern das Vertrauen.
 
 EXPECTED:
-- P1: realization coda („Und da wurde mir klar…")
-- P1: fully front-loaded backstory („Zur Einordnung: …")
+- P1: realization coda („Und da wurde mir klar…“)
+- P1: fully front-loaded backstory („Zur Einordnung: …“)
 - P2: person introduced via description block instead of action or speech
 - P2: everything resolved, no open thread; flat escalation (setup → demo → signature in even beats)
-- Rewrite direction: end on the event or an open question, one temporal move, let Herr Krause enter through his own words
+- P1: negative parallelism in the realization coda
+- Rewrite direction: reorder the supplied backstory and end on a sourced event. No quote or open question is supplied; flag those gaps instead of inventing either.
 
 ## Case 10 – Product blog section (profile: blog)
 
@@ -119,11 +122,13 @@ INPUT:
 > Der Export läuft jetzt auch nachts. Das ist wichtiger, als es klingt. Was die meisten übersehen: Die Nachtfenster entscheiden über den ganzen Tagesbetrieb. Das Beste daran: Es läuft ohne Zutun. Wir haben die Laufzeit halbiert, und das Team merkt es sofort. Am Ende zählt eben nicht die Technik, sondern die Zeit, die sie zurückgibt.
 
 EXPECTED:
-- P2: interpretive metadiscourse („Das ist wichtiger, als es klingt")
-- P1: faux-insight setup („Was die meisten übersehen:")
-- P1: colon reveal („Das Beste daran: …")
-- P1: aphoristic kicker in the last sentence („Am Ende zählt eben nicht …, sondern …"), which is also a negative parallelism
-- P1: vague claim without a checkable fact („halbiert" without the two figures; „merkt es sofort")
+- P2: interpretive metadiscourse („Das ist wichtiger, als es klingt“)
+- P1: faux-insight setup („Was die meisten übersehen:“)
+- P1: colon reveal („Das Beste daran: …“)
+- P1: aphoristic kicker in the last sentence („Am Ende zählt eben nicht …, sondern …“), which is also a negative parallelism
+- P1: false agency („Die Nachtfenster entscheiden …“)
+- Flag the gap in „das Team merkt es sofort“: what does the team notice?
+- Preserve: „Wir haben die Laufzeit halbiert“ is a checkable relative change. Missing absolute figures do not justify deleting or weakening it.
 - Rewrite direction: delete the asides, state the night window as a plain sentence, end on the concrete result instead of the maxim
 
 ## Case 11 – Email reply (profile: email)
@@ -133,12 +138,12 @@ INPUT:
 
 EXPECTED:
 - P2: reply rebuilds context the reader already has; the decision (Variante B) arrives last
-- P1: phantom objection („Versteh mich nicht falsch …")
-- P2: text about itself („Für diese Antwort habe ich … durchgesehen …")
-- P1: staged emphasis („Lies das nochmal:", „JEDES")
-- P1: word-list hit („Unterm Strich")
+- P1: phantom objection („Versteh mich nicht falsch …“)
+- P2: text about itself („Für diese Antwort habe ich … durchgesehen …“)
+- P1: staged emphasis („Lies das nochmal:“, „JEDES“)
+- P1: word-list hit („Unterm Strich“)
 - Must NOT flag: the salutation and the sign-off
-- Rewrite direction: open with the recommendation, keep the one fact Petra lacks (maintenance now included every year), drop the recap
+- Rewrite direction: open with the recommendation, keep maintenance now included every year and any reasoning that changes Petra’s decision; drop only the redundant recap and work narration.
 
 ## Case 12 – Weak signals only (profile: blog) — MUST STAY CLEAN
 
@@ -146,7 +151,7 @@ INPUT:
 > Seit März messen wir die Ladezeiten jeden Morgen um 8 Uhr – die Werte schwanken zwischen 1,2 und 1,9 Sekunden. Vielleicht liegt das am CDN, sicher wissen wir es noch nicht. Die Messung wurde von Jana aufgesetzt; die Kollegin pflegt das Skript seitdem allein.
 
 EXPECTED:
-- No findings. One dash, one honest hedge, one passive sentence and one synonym change („Jana" / „die Kollegin") are weak signals that occur in human writing; none of them clusters with another tell here. Flagging any of them is a regression.
+- No findings. One dash, one honest hedge, one passive sentence and one synonym change („Jana“ / „die Kollegin“) are weak signals that occur in human writing; their co-occurrence has no shared filler or repetitive function. The passive names its actor, and the uncertainty is explicit. Flagging any of them is a regression.
 
 ## Case 13 – Landing page section (profile: blog)
 
@@ -158,10 +163,10 @@ INPUT:
 > ## Einmal einrichten. Fertig.
 
 EXPECTED:
-- P1: false agency („Die Zahlen sprechen für sich", „Unser Tool entscheidet selbst")
+- P1: false agency („Die Zahlen sprechen für sich“, „Unser Tool entscheidet selbst“)
 - P1: template balance (empty concession)
-- P2: the „ist real" calque
-- P2: counted list for its own sake („Drei zentrale Vorteile")
+- P2: the „ist real“ calque
+- P2: counted list for its own sake („Drei zentrale Vorteile“)
 - P1: slogan cadence (three headings built from clipped sentences in one document)
 - Rewrite direction: name the figures and the matching mechanism if the source has them, otherwise flag the gaps; headings as noun labels
 
@@ -171,4 +176,41 @@ INPUT:
 > Zugangsdaten dürfen niemals im Frontend-Code gespeichert werden. Das Präparat kann bei einigen Patienten Schwindel verursachen. Die Ausfallquote sank im dritten Quartal um 40 %, nicht um 4 %. Der Parser liest die Datei zeilenweise ein und schlägt fehl, wenn eine Zeile mehr als 4.096 Zeichen hat.
 
 EXPECTED:
-- No findings. The absolute („niemals"), the hedge and scope („kann", „bei einigen Patienten"), the corrected figure („40 %, nicht 4 %") and the technical verbs („liest", „schlägt fehl") are load-bearing or exempt. Flagging, softening, or strengthening any of them is a regression.
+- No findings. The absolute („niemals“), the hedge and scope („kann“, „bei einigen Patienten“), the corrected figure („40 %, nicht 4 %“) and the technical verbs („liest“, „schlägt fehl“) are load-bearing or exempt. Flagging, softening, or strengthening any of them is a regression.
+
+
+## Case 15 – Protected vocabulary and tail (profile: docs) — MUST STAY CLEAN
+
+INPUT:
+> The structure must remain robust under the specified load. The parser rejects rows exceeding 4,096 characters.
+
+EXPECTED:
+- No findings. “Robust” has a real technical meaning; the participle phrase states the rejection condition rather than performing analysis. Neither term may be mechanically cut by the self-check.
+
+## Case 16 – Supported three-part meaning (profile: docs) — MUST STAY CLEAN
+
+INPUT:
+> Der Export enthält Name, Datum und Preis. Die drei Felder sind Pflichtfelder.
+
+EXPECTED:
+- No findings. All three list items and the informative count stay; changing the count or dropping an item to avoid a triad would lose content.
+
+## Case 17 – Missing evidence (profile: blog)
+
+INPUT:
+> Die Einführung unterstreicht unser Engagement. Studien zeigen, dass die Lösung die Bearbeitungszeit halbiert.
+
+EXPECTED:
+- P1: significance inflation („unterstreicht unser Engagement“)
+- P0: unsourced vague attribution („Studien zeigen“)
+- Rewrite constraint: flag the source gap. Do not invent a study, absolute timings, an actor, or a date; preserve the halving claim’s strength if retained pending evidence.
+
+## Case 18 – Same punctuation, different surface (profile: slides, notes: prose)
+
+INPUT:
+> Slide: Der Parser liest die Datei — und prüft jede Zeile.
+> Speaker notes: Der Parser liest die Datei – und prüft jede Zeile.
+
+EXPECTED:
+- P1: em dash on the slide face, even though it is a single dash
+- Must NOT flag: the correctly spaced German en dash in the notes or the ordinary technical verbs. The slide prohibition concerns em dashes, not every dash character or a range marker.

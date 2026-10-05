@@ -147,3 +147,28 @@ INPUT:
 
 EXPECTED:
 - No findings. One dash, one honest hedge, one passive sentence and one synonym change („Jana" / „die Kollegin") are weak signals that occur in human writing; none of them clusters with another tell here. Flagging any of them is a regression.
+
+## Case 13 – Landing page section (profile: blog)
+
+INPUT:
+> ## Weniger suchen. Mehr finden.
+> Die Zahlen sprechen für sich. Unser Tool entscheidet selbst, welche Dokumente relevant sind. Obwohl die Suche vielversprechend ist, bleibt die Datenqualität eine Herausforderung. Der Druck ist real.
+> ## Drei zentrale Vorteile
+> ## Ein Login. Alle Quellen.
+> ## Einmal einrichten. Fertig.
+
+EXPECTED:
+- P1: false agency („Die Zahlen sprechen für sich", „Unser Tool entscheidet selbst")
+- P1: template balance (empty concession)
+- P2: the „ist real" calque
+- P2: counted list for its own sake („Drei zentrale Vorteile")
+- P1: slogan cadence (three headings built from clipped sentences in one document)
+- Rewrite direction: name the figures and the matching mechanism if the source has them, otherwise flag the gaps; headings as noun labels
+
+## Case 14 – Load-bearing language (profile: docs) — MUST STAY CLEAN
+
+INPUT:
+> Zugangsdaten dürfen niemals im Frontend-Code gespeichert werden. Das Präparat kann bei einigen Patienten Schwindel verursachen. Die Ausfallquote sank im dritten Quartal um 40 %, nicht um 4 %. Der Parser liest die Datei zeilenweise ein und schlägt fehl, wenn eine Zeile mehr als 4.096 Zeichen hat.
+
+EXPECTED:
+- No findings. The absolute („niemals"), the hedge and scope („kann", „bei einigen Patienten"), the corrected figure („40 %, nicht 4 %") and the technical verbs („liest", „schlägt fehl") are load-bearing or exempt. Flagging, softening, or strengthening any of them is a regression.

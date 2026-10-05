@@ -51,7 +51,7 @@ wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, 
 
 ### German stock phrases: cut or replace
 
-Apply the matching rule’s severity in `../SKILL.md`; stock-phrase headings do not promote a P2 generic closer to P1.
+Apply the matching rule's severity in `../SKILL.md`; stock-phrase headings do not promote a P2 generic closer to P1.
 
 **Openers:** „In der heutigen digitalen Welt / schnelllebigen Zeit…“, „Im Zeitalter von…“, „Ob Startup oder Konzern –…“, „Ganz gleich, ob…“, „Kennen Sie das?“, „Stellen Sie sich vor,…“ (als Ersatz fürs Argument), „Immer mehr Unternehmen…“, „Wir alle wissen:…“
 
@@ -124,9 +124,9 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 
 **Closers:** "In conclusion", "The future looks bright", "To sum up", "The bottom line is", "At the end of the day", "Only time will tell"
 
-**Chat artifacts (P0):** "Certainly!", "I hope this helps!", "Feel free to reach out", "You're absolutely right", "Great question!", "Please don't hesitate to…", "I hope this email finds you well", "Absolutely!", "Sure!", "I'd be happy to…", "That's a great point!", "As an AI…", "Would you like me to…?", "Should I continue?", reasoning and prompt echoes: "Let me think step by step", "Breaking this down", "Here's my thought process", "You're asking about", "To answer your question"
+**Chat artifacts (P0):** "Certainly!", "I hope this helps!", "Feel free to reach out", "You're absolutely right", "Great question!", "Please don't hesitate to…", "I hope this email finds you well", "Absolutely!", "Sure!", "I'd be happy to…", "That's a great point!", "As an AI…", "Would you like me to…?", "Should I continue?", reasoning and prompt echoes: "Let me think step by step", "Here's my thought process", "Breaking this down", "You're asking about", "To answer your question"
 
-**Faux-insight setups:** "what nobody tells you", "the part everyone misses", "what most people get wrong", "here's what they don't say", "the uncomfortable truth is", "let me be clear"
+**Faux-insight setups:** "the part everyone misses", "what nobody tells you", "here's what they don't say", "what most people get wrong", "let me be clear", "the uncomfortable truth is"
 
 **Reader steering (metadiscourse):** "that matters more than it sounds", "this distinction matters", "the key point is", "as you can see", "in other words" (when the previous sentence was already clear), "make no mistake"
 
@@ -142,7 +142,7 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 
 **Vague association:** "associated with", "in connection with", "linked to", "tied to", when the relationship stays unnamed
 
-**False agency and template balance:** "the data tells a story", "paints a clear picture", "the numbers speak for themselves", "While X shows promise, Y remains a challenge", "on one hand … on the other hand" without a verdict, "The struggle is real.", "three key takeaways", "In this article, we will explore"
+**False agency and template balance:** "paints a clear picture", "the data tells a story", "the numbers speak for themselves", "While X shows promise, Y remains a challenge", "on one hand … on the other hand" without a verdict, "The struggle is real.", "three key takeaways", "In this article, we will explore"
 
 **Business collocations:** "circle back", "low-hanging fruit", "navigate challenges", "leverage synergies"
 

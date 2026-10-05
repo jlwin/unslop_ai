@@ -265,8 +265,10 @@ Description-block intro → entry through action or speech:
 
 Tidy ending → let one thread stay open:
 
-- VORHER: „Heute läuft der Prozess stabil, das Team ist zufrieden, und auch die Kosten sind im Rahmen. Alle Fragen von damals sind beantwortet.“
-- NACHHER: „Heute läuft der Prozess stabil, das Team ist zufrieden, und auch die Kosten sind im Rahmen. Alle Fragen von damals sind beantwortet.“ (Unverändert: Ohne offenen Punkt in der Quelle lässt sich keiner ergänzen.)
+- VORHER: „Heute läuft der Prozess stabil, und die Kosten sind im Rahmen. Ob das Modell am zweiten Standort funktioniert, prüfen wir im Frühjahr. Am Ende hat sich alles zusammengefügt, und die Geschichte hat ihren guten Abschluss gefunden.“
+- NACHHER: „Heute läuft der Prozess stabil, und die Kosten sind im Rahmen. Ob das Modell am zweiten Standort funktioniert, prüfen wir im Frühjahr.“
+
+The open thread was already in the source; the rewrite only cuts the smoothing wrap-up. When the source has no open thread, the ending stays as it is: inventing one would add a claim.
 
 Anti-convergence note: never run all of these in one piece. One or two moves, rotated across pieces – a text that opens mid-scene, quotes two people, digresses once, and ends unresolved has just traded one template for another.
 
@@ -327,7 +329,7 @@ The document narrates how it was made or how it is laid out, instead of saying s
 - VORHER: „Für diese Übersicht haben wir die Websites aller fünf Anbieter ausgewertet und die Angaben in die folgende Tabelle übertragen. Die Tabelle ist nach Preis sortiert.“
 - NACHHER: „Angaben laut Websites aller fünf Anbieter; die Tabelle ist nach Preis sortiert.“
 - BEFORE: "This endpoint was added to replace the old polling approach, which caused unnecessary load."
-- AFTER: "This endpoint is intended to replace the old polling approach, which caused unnecessary load."
+- AFTER: "This endpoint replaces the old polling approach, which caused unnecessary load."
 
 Heading echo, same family:
 
@@ -359,7 +361,7 @@ One clipped slogan is voice; the third in a document is a template. Things that 
 The concession that weighs nothing, the both-sides frame without a verdict, and the outline delivered three times.
 
 - VORHER: „Obwohl die Migration vielversprechend ist, bleibt die Datenqualität eine Herausforderung.“
-- NACHHER: „Die Migration ist vielversprechend; die Datenqualität bleibt eine Herausforderung.“ (Flag the gap: which data, how many records, by when.)
+- NACHHER: „Offen ist bei der Migration noch die Datenqualität.“ (The weightless concession is cut, as the pattern requires. Flag the gap: which data, how many records, by when.)
 - VORHER: „In diesem Beitrag schauen wir uns drei Punkte an: Kosten, Aufwand und Risiken. [… drei Abschnitte …] Zusammenfassend haben wir Kosten, Aufwand und Risiken betrachtet.“
 - NACHHER: [Drei Abschnitte mit den Überschriften „Kosten“, „Aufwand“ und „Risiken“; der Text endet mit dem letzten neuen Punkt.]
 

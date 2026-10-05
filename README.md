@@ -12,17 +12,17 @@ So this skill works on three levels, weighted toward the deeper two:
 
 | Level | What it catches | Examples |
 |---|---|---|
-| 1 – Words | Vocabulary, stock phrases, punctuation | „nahtlos", „Gamechanger", *delve*, *serves as a testament*, em-dash overuse |
-| 2 – Rhythm | Sentence-level patterns | uniform sentence lengths, parataxis chains, triads, „nicht X, sondern Y" / *"It's not X, it's Y"*, hedge stacking, participle tails |
-| 3 – Structure | The shape of the whole text | the takeaway repeated per section, uniform paragraphs, template scaffolding, vague instead of named references, performed emotion („ein Kloß im Hals") instead of a named feeling |
+| 1 – Words | Vocabulary, stock phrases, punctuation | „nahtlos“, „Gamechanger“, *delve*, *serves as a testament*, em-dash overuse |
+| 2 – Rhythm | Sentence-level patterns | uniform sentence lengths, parataxis chains, triads, „nicht X, sondern Y“ / *"It's not X, it's Y"*, hedge stacking, participle tails |
+| 3 – Structure | The shape of the whole text | the takeaway repeated per section, uniform paragraphs, template scaffolding, vague instead of named references, performed emotion („ein Kloß im Hals“) instead of a named feeling |
 
 One rule runs through all three levels: swap the vague claim for the checkable fact. A number, a name, a date, a price, a mechanism. And when that fact is missing, the skill flags the gap; it never invents one.
 
 ## What makes this one different
 
-**German support.** AI slop in German has its own tells that English rule sets miss: the em dash without spaces inside German text (the correct Gedankenstrich is a spaced en dash), the ritual „Fazit"-heading that summarizes what was already said, salutation calques („Ich hoffe, diese E-Mail erreicht Sie wohlbehalten"), genitive noun chains, sham-breadth constructions („Ob Handwerksbetrieb oder DAX-Konzern"). All covered, with German word lists and worked examples.
+**German support.** AI slop in German has its own tells that English rule sets miss: the em dash without spaces inside German text (the correct Gedankenstrich is a spaced en dash), the ritual „Fazit“-heading that summarizes what was already said, salutation calques („Ich hoffe, diese E-Mail erreicht Sie wohlbehalten“), genitive noun chains, sham-breadth constructions („Ob Handwerksbetrieb oder DAX-Konzern“). All covered, with German word lists and worked examples.
 
-**Guardrails against the humanizer failure mode.** The classic mistake of de-slopping tools is trading one fingerprint for a new one: chopped staccato fragments, fake first-person anecdotes, performed candor („Real talk:"). This skill treats every such move as a failed rewrite. It may cut and sharpen; it may not add facts, stance, or personality the author never wrote. Human quirks and typos in source text stay where they are.
+**Guardrails against the humanizer failure mode.** The classic mistake of de-slopping tools is trading one fingerprint for a new one: chopped staccato fragments, fake first-person anecdotes, performed candor („Real talk:“). This skill treats every such move as a failed rewrite. It may cut and sharpen; it may not add facts, stance, or personality the author never wrote. Human quirks and typos in source text stay where they are.
 
 **Calibrated, not dogmatic.** Rules apply per register. Fragments are native on LinkedIn and a tell in long-form prose. Hedging is a bug in marketing copy and a requirement in academic writing, where neutral precision *is* the human voice. A context-profile table (Social, Blog, Email, Docs, Academic, Slides) sets the strictness per rule.
 
@@ -31,9 +31,9 @@ One rule runs through all three levels: swap the vague claim for the checkable f
 | Mode | Trigger | Behavior |
 |---|---|---|
 | **Write** | default for new text | applies the rules while drafting, then runs the self-check against its own draft |
-| **Check** | „prüfe auf AI-Muster", *"scan this"* | flags only, grouped by severity (P0/P1/P2), changes nothing |
-| **Rewrite** | „mach das menschlicher", *"de-slop this"* | audit, cleaned version, change log, second pass on its own output |
-| **Edit file** | „bereinige draft.md direkt" | minimal in-place edits, leaves human passages untouched |
+| **Check** | „prüfe auf AI-Muster“, *"scan this"* | flags only, grouped by severity (P0/P1/P2), changes nothing |
+| **Rewrite** | „mach das menschlicher“, *"de-slop this"* | audit, cleaned version, change log, second pass on its own output |
+| **Edit file** | „bereinige draft.md direkt“ | minimal in-place edits, leaves human passages untouched |
 
 ## Install
 
@@ -69,11 +69,13 @@ Bereinige README.md direkt in der Datei.                 → Edit file
 
 A taste of what the rewrite mode does:
 
-> **Before:** „Unsere Plattform ist schnell, sicher und intuitiv.“
-> **After:** „Die Plattform ist schnell und sicher; sie lässt sich intuitiv bedienen.“ (Evidence for the three claims is missing; flag the gaps.)
+> **Before:** „Unsere Plattform ist schnell, sicher und intuitiv – Reports laden in unter zwei Sekunden, und den BSI-Grundschutz-Check hat sie bestanden.“
+> **After:** „Die Plattform lädt Reports in unter zwei Sekunden und hat den BSI-Grundschutz-Check bestanden.“ („Intuitiv“ has no evidence in the source; the audit flags that gap instead of filling it.)
 
-> **Before:** *"This launch stands as a powerful testament to our team's relentless pursuit of excellence."*
-> **After:** *"We launched."* (What launched, when, and what changed are missing; flag the gaps.)
+> **Before:** *"This launch stands as a powerful testament to our team's relentless pursuit of excellence: the export feature ships today, and the beta group has run it since April without a single support ticket."*
+> **After:** *"The export feature ships today. The beta group has run it since April without a single support ticket."*
+
+Every fact in the After lines comes from the Before lines.
 
 More in [`skills/unslop/references/pattern-catalog.md`](skills/unslop/references/pattern-catalog.md): 30 pattern families, with German and English before/after examples.
 

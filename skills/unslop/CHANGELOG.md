@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.8 – 2026-10-05
+
+- Meaning at the same strength: the no-silent-loss guardrail now covers causes, comparisons, conditions, negations, scope, approximations, ranges, list items, and attributed quotes
+- New guardrail: load-bearing hedges, negations, and absolutes in legal, medical, scientific, safety, and security text are never removed, softened, or strengthened; unsupported absolutes in persuasive prose are flagged
+- Rewrite decision rule: change a sentence only when the defect is plainer than the risk of changing it; a word-list hit is a reason to look, not a licence to edit
+- New patterns: contrastive definitions with three protected look-alikes, slogan cadence (threshold three per document), false agency and tool anthropomorphism, parenthetical hedging, the „ist real" calque, counted lists for their own sake, template balance, preview and recap symmetry
+- Measurable structure signals for check mode (connective paragraph openers, repeated openers, one-line staccato, commenting tails, sentence-length extremes)
+- Heading rule: no agency for tools or calendar slots, no uplift transformations; renaming the abstraction is not a repair
+- Maintenance rule: every pattern enters with one example to catch and one look-alike to leave alone
+- Word lists (DE + EN), catalog sections 28–30, regression cases 13 and 14, self-check items 19–20
+
 ## v1.7 – 2026-10-02
 
 - Weak-alone calibration: single dashes, one hedge, one passive, one synonym change, "von X bis Y" spans and similar signals count only when they cluster; synonym variation downgraded accordingly

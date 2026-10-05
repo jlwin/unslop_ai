@@ -6,7 +6,7 @@ A writing guardrail for Claude that prevents and removes AI slop, in German and 
 
 ## Why word filters are not enough
 
-Most "humanizer" prompts ban a list of words (delve, tapestry, seamless) and call it a day. That fails twice. Word lists age with every model generation; GPT-5-era output already avoids most of the classic vocabulary. And the durable fingerprint sits elsewhere: in the StoryScope study (Russell et al. 2026, 61,608 texts), discourse structure alone identified AI text with 93.2 % accuracy, while professional sentence-level rewriting moved detection by just 1.6 points.
+Most "humanizer" prompts ban a list of words (delve, tapestry, seamless) and call it a day. That fails twice. Word lists age with every model generation; GPT-5-era output already avoids most of the classic vocabulary. And the durable fingerprint sits elsewhere: in the StoryScope study (61,608 texts; Russell et al. 2026), discourse structure alone identified AI text with 93.2 % accuracy, while professional sentence-level rewriting moved detection by just 1.6 points.
 
 So this skill works on three levels, weighted toward the deeper two:
 

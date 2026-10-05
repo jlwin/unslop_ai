@@ -69,13 +69,13 @@ Bereinige README.md direkt in der Datei.                 → Edit file
 
 A taste of what the rewrite mode does:
 
-> **Before:** „Unsere Plattform ist schnell, sicher und intuitiv."
-> **After:** „Die Plattform lädt Reports in unter zwei Sekunden. Und sie besteht den BSI-Grundschutz-Check."
+> **Before:** „Unsere Plattform ist schnell, sicher und intuitiv.“
+> **After:** „Die Plattform ist schnell und sicher; sie lässt sich intuitiv bedienen.“ (Evidence for the three claims is missing; flag the gaps.)
 
 > **Before:** *"This launch stands as a powerful testament to our team's relentless pursuit of excellence."*
-> **After:** *"We shipped the export feature today. The beta group has been running it since April without a single support ticket."*
+> **After:** *"We launched."* (What launched, when, and what changed are missing; flag the gaps.)
 
-More in [`skills/unslop/references/pattern-catalog.md`](skills/unslop/references/pattern-catalog.md): 30 pattern families, each with German and English before/after pairs.
+More in [`skills/unslop/references/pattern-catalog.md`](skills/unslop/references/pattern-catalog.md): 30 pattern families, with German and English before/after examples.
 
 ## Repository layout
 

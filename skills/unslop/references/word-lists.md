@@ -2,15 +2,15 @@
 
 Three tiers, ordered by how reliable the signal is:
 
-- **Tier 1 – replace every time.** These show up at a far higher rate in machine-generated text than in human prose.
+- **Tier 1 – inspect every hit; replace stock uses.** These show up at a far higher rate in machine-generated text than in human prose.
 - **Tier 2 – flag when two or more cluster.** Fine on their own; a paragraph containing at least two of them is a strong signal.
 - **Tier 3 – flag only when they pile up.** Normal words that AI stacks as filler.
 
-Inflected forms count (nahtlos → nahtlose, delve → delving). Don't flag words used with real technical meaning in context (robust in structural engineering, ecosystem around platform APIs, „Testament" as a legal term). Never replace inside quotations or code. These lists age; when new stock phrases keep turning up, extend the list.
+Inflected forms count (nahtlos → nahtlose, delve → delving). Don't flag words used with real technical meaning in context (robust in structural engineering, ecosystem around platform APIs, „Testament“ as a legal term). Apply the modes and guardrails in `../SKILL.md`: check mode flags without editing; literal, quoted, attributed, domain-correct, and required brand uses stay. Never replace inside quotations, code, tables, or attributed third-party text. A listed phrase is not a finding when it carries real content (for example, an ordinary email sign-off or a real question to its recipient). These lists age; when new stock phrases keep turning up, extend the list.
 
 ## German
 
-### Tier 1 – replace every time
+### Tier 1 – replace stock uses
 
 | Instead of | Use |
 |---|---|
@@ -43,7 +43,7 @@ Inflected forms count (nahtlos → nahtlose, delve → delving). Don't flag word
 
 ### Tier 2 – flag when two or more cluster
 
-optimieren, effizient (ohne Messgröße), innovativ, nachhaltig (als Universaladjektiv), zentral, entscheidend, maßgeblich, umfassend, fundiert, gezielt, individuell, flexibel, transparent (als Buzzword), agil, smart, digital (als Weihwasser: „digitale Lösungen"), zeitnah, proaktiv, niederschwellig, praxisnah, passgenau, zielführend, ergebnisoffen, wertschätzend, auf Augenhöhe, End-to-End, 360-Grad, Rundum-sorglos
+optimieren, effizient (ohne Messgröße), innovativ, nachhaltig (als Universaladjektiv), zentral, entscheidend, maßgeblich, umfassend, fundiert, gezielt, individuell, flexibel, transparent (als Buzzword), agil, smart, digital (als Weihwasser: „digitale Lösungen“), zeitnah, proaktiv, niederschwellig, praxisnah, passgenau, zielführend, ergebnisoffen, wertschätzend, auf Augenhöhe, End-to-End, 360-Grad, Rundum-sorglos
 
 ### Tier 3 – flag only when they pile up
 
@@ -51,35 +51,37 @@ wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, 
 
 ### German stock phrases: cut or replace
 
-**Openers:** „In der heutigen digitalen Welt / schnelllebigen Zeit…", „Im Zeitalter von…", „Ob Startup oder Konzern –…", „Ganz gleich, ob…", „Kennen Sie das?", „Stellen Sie sich vor,…" (als Ersatz fürs Argument), „Immer mehr Unternehmen…", „Wir alle wissen:…"
+Apply the matching rule’s severity in `../SKILL.md`; stock-phrase headings do not promote a P2 generic closer to P1.
 
-**Transitions:** „Es ist wichtig zu beachten, dass", „Dabei gilt es zu berücksichtigen", „Hierbei spielt … eine entscheidende Rolle", „Doch was bedeutet das konkret?", „Werfen wir einen Blick auf", „Die Antwort lautet:", „Kurz gesagt:" (als Ritual), „Nicht nur X, sondern auch Y" (inflationär), „Von X bis Y" (Schein-Spannweite, allein schwach)
+**Openers:** „In der heutigen digitalen Welt / schnelllebigen Zeit…“, „Im Zeitalter von…“, „Ob Startup oder Konzern –…“, „Ganz gleich, ob…“, „Kennen Sie das?“, „Stellen Sie sich vor,…“ (als Ersatz fürs Argument), „Immer mehr Unternehmen…“, „Wir alle wissen:…“
 
-**Closers:** „Fazit:" als Standard-Überschrift, „Zusammenfassend lässt sich sagen", „Unterm Strich", „Am Ende des Tages", „Es bleibt abzuwarten", „Die Zukunft bleibt spannend", „Eines steht fest:", „Denn eines ist klar:", „Sind Sie bereit für…?", „Lust auf mehr?"
+**Transitions:** „Es ist wichtig zu beachten, dass“, „Dabei gilt es zu berücksichtigen“, „Hierbei spielt … eine entscheidende Rolle“, „Doch was bedeutet das konkret?“, „Werfen wir einen Blick auf“, „Die Antwort lautet:“, „Kurz gesagt:“ (als Ritual), „Nicht nur X, sondern auch Y“ (inflationär), „Von X bis Y“ (Schein-Spannweite, allein schwach)
 
-**Chat artifacts (P0):** „Gerne erstelle ich Ihnen…", „Ich hoffe, das hilft!", „Lassen Sie es mich wissen, falls…", „Selbstverständlich!", „Das ist eine gute Frage", „Ich hoffe, diese E-Mail erreicht Sie wohlbehalten" (Anglizismus-Kalk), „Soll ich weitermachen?", „Möchtest du, dass ich …?" (am Ende eines eigenständigen Textes), Denk- und Prompt-Echos: „Gehen wir das Schritt für Schritt durch", „Gehen wir das systematisch an", „Du fragst also, ob …", „Um deine Frage zu beantworten"
+**Closers:** „Fazit:“ als Standard-Überschrift, „Zusammenfassend lässt sich sagen“, „Unterm Strich“, „Am Ende des Tages“, „Es bleibt abzuwarten“, „Die Zukunft bleibt spannend“, „Eines steht fest:“, „Denn eines ist klar:“, „Sind Sie bereit für…?“, „Lust auf mehr?“
 
-**Faux-Insight-Aufhänger:** „Was die meisten übersehen", „Was dir niemand sagt", „Der Teil, den alle überspringen", „Was kaum jemand ausspricht", „Die unbequeme Wahrheit ist", „Hand aufs Herz:" (als Auftakt statt als Haltung)
+**Chat artifacts (P0):** „Gerne erstelle ich Ihnen…“, „Ich hoffe, das hilft!“, „Lassen Sie es mich wissen, falls…“, „Selbstverständlich!“, „Das ist eine gute Frage“, „Ich hoffe, diese E-Mail erreicht Sie wohlbehalten“ (Anglizismus-Kalk), „Soll ich weitermachen?“, „Möchtest du, dass ich …?“ (am Ende eines eigenständigen Textes), Denk- und Prompt-Echos: „Gehen wir das Schritt für Schritt durch“, „Gehen wir das systematisch an“, „Du fragst also, ob …“, „Um deine Frage zu beantworten“
 
-**Leser-Steuerung (Metadiskurs):** „Das ist wichtiger, als es klingt", „Entscheidend dabei:", „Wichtig zu verstehen:", „Wie man sieht", „Anders gesagt" (wenn der Satz davor schon klar war), „Merke:", „Und genau das ist der Punkt"
+**Faux-Insight-Aufhänger:** „Was die meisten übersehen“, „Was dir niemand sagt“, „Der Teil, den alle überspringen“, „Was kaum jemand ausspricht“, „Die unbequeme Wahrheit ist“, „Hand aufs Herz:“ (als Auftakt statt als Haltung)
 
-**Phantom-Einwände:** „Damit will ich nicht sagen, dass…", „Versteh mich nicht falsch", „Um es klar zu sagen", „Naheliegend wäre, …, doch…", „Man könnte meinen, …", „Das heißt nicht, dass…" (wenn niemand das behauptet hat)
+**Leser-Steuerung (Metadiskurs):** „Das ist wichtiger, als es klingt“, „Entscheidend dabei:“, „Wichtig zu verstehen:“, „Wie man sieht“, „Anders gesagt“ (wenn der Satz davor schon klar war), „Merke:“, „Und genau das ist der Punkt“
 
-**Inszenierte Betonung:** „Lies das nochmal.", „Lass das mal sacken.", „JEDEN. EINZELNEN. TAG.", ein einzelnes Wort in Versalien als Gewicht
+**Phantom-Einwände:** „Damit will ich nicht sagen, dass…“, „Versteh mich nicht falsch“, „Um es klar zu sagen“, „Naheliegend wäre, …, doch…“, „Man könnte meinen, …“, „Das heißt nicht, dass…“ (wenn niemand das behauptet hat)
 
-**Ritual-Gliederung und Füller:** „Erstens … Zweitens … Drittens" in kurzen Texten, „Hier kommt X ins Spiel", „Last but not least", „Nicht zuletzt", „Interessanterweise", „Kurz und knapp:"
+**Inszenierte Betonung:** „Lies das nochmal.“, „Lass das mal sacken.“, „JEDEN. EINZELNEN. TAG.“, ein einzelnes Wort in Versalien als Gewicht
 
-**Schein-Autorität und vage Bezüge:** „Bekannt aus: …" als Medienleiste, Follower-Zahlen als Beleg, „im Zusammenhang mit" / „in Verbindung mit", wenn offen bleibt, welche Rolle jemand hatte
+**Ritual-Gliederung und Füller:** „Erstens … Zweitens … Drittens“ in kurzen Texten, „Hier kommt X ins Spiel“, „Last but not least“, „Nicht zuletzt“, „Interessanterweise“, „Kurz und knapp:“
 
-**Schein-Agenten:** „Die Zahlen sprechen für sich", „Die Daten erzählen eine Geschichte", „zeichnet ein klares Bild", „Das Tool entscheidet selbst", „Die KI weiß, was du brauchst"
+**Schein-Autorität und vage Bezüge:** „Bekannt aus: …“ als Medienleiste, Follower-Zahlen als Beleg, „im Zusammenhang mit“ / „in Verbindung mit“, wenn offen bleibt, welche Rolle jemand hatte
 
-**Slogan- und Bilanzschablonen:** „Weniger X. Mehr Y.", „Ein Tool, drei Abteilungen.", „Obwohl X vielversprechend ist, bleibt Y eine Herausforderung", „Einerseits … andererseits …" ohne Fazit, „Der Druck ist real.", „Drei zentrale Erkenntnisse", „5 Dinge, die du wissen musst", „In diesem Beitrag schauen wir uns … an"
+**Schein-Agenten:** „Die Zahlen sprechen für sich“, „Die Daten erzählen eine Geschichte“, „zeichnet ein klares Bild“, „Das Tool entscheidet selbst“, „Die KI weiß, was du brauchst“
 
-**Engagement bait (social):** „Und das Beste daran?", „Der Clou:", „Spoiler:", „Plot Twist:", „Aber der Reihe nach.", „Doch dann kam alles anders.", 🧵, Emoji-Bullets (🚀✅💡) vor jeder Zeile, Hashtag-Blöcke ab 3 Tags
+**Slogan- und Bilanzschablonen:** „Weniger X. Mehr Y.“, „Ein Tool, drei Abteilungen.“, „Obwohl X vielversprechend ist, bleibt Y eine Herausforderung“, „Einerseits … andererseits …“ ohne Fazit, „Der Druck ist real.“, „Drei zentrale Erkenntnisse“, „5 Dinge, die du wissen musst“, „In diesem Beitrag schauen wir uns … an“
+
+**Engagement bait (social):** „Und das Beste daran?“, „Der Clou:“, „Spoiler:“, „Plot Twist:“, „Aber der Reihe nach.“, „Doch dann kam alles anders.“, 🧵, Emoji-Bullets (🚀✅💡) vor jeder Zeile, Hashtag-Blöcke ab 3 Tags
 
 ## English
 
-### Tier 1 – replace every time
+### Tier 1 – replace stock uses
 
 | Instead of | Use |
 |---|---|
@@ -108,7 +110,7 @@ wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, 
 
 ### Tier 2 – flag when two or more cluster
 
-navigate (figurativ), bolster, spearhead, resonate, revolutionize, catalyze, augment, illuminate, elucidate, cornerstone, paramount, poised to, burgeoning, nascent, quintessential, overarching, transformative, ecosystem (metaphorisch), interplay, encompass, crucial, notably, moreover, furthermore, additionally
+navigate (figurativ), bolster, spearhead, resonate, revolutionize, catalyze, augment, illuminate, elucidate, cornerstone, paramount, poised to, burgeoning, nascent, quintessential, overarching, transformative, ecosystem (metaphorisch), interplay, encompass, notably, moreover, furthermore, additionally
 
 ### Tier 3 – flag only when they pile up
 
@@ -150,20 +152,20 @@ significant(ly), innovative, effective(ly), dynamic, scalable, compelling, unpre
 
 ## Leak artifacts (P0, both languages)
 
-On sight: remove mechanically, replace with a real reference where one was meant. Their presence is close to proof of unedited copy-paste from a chat tool:
+Flag on sight; in rewrite/edit mode remove leaked artifacts and use a reference only when the source supplies it. Preserve unresolved gaps in the audit. Deliberate examples in audit material, code, or quotations are protected; never infer authorship from a token alone:
 
 `oaicite`, `contentReference`, `turn0search0`, `citeturn`, `grok_card`, `attributableIndex`, `[attached_file:1]`, URL parameters `utm_source=chatgpt.com|openai|claude.ai|perplexity.ai`, unfilled placeholders (`[Name]`, `[INSERT X]`, `2025-XX-XX`, `<!-- TODO -->`), Markdown asterisks in plain-text contexts (email, DM, LinkedIn raw text)
 
 ## Microformats (weak but cheap tells)
 
-Wrong locale conventions read as pasted-from-a-US-tool. Individually P2; mixed conventions inside one document are P1.
+Wrong locale conventions warrant P2 where they qualify as defects; mixed conventions inside one document are P1. Apply the weak-alone calibration in `../SKILL.md`: a single straight quote or compound hyphen is corroborating evidence only, not an automatic finding. Deliberate typography and existing human quirks stay.
 
 **German documents:**
 
-- Percent with a space: „50 %", not „50%"
-- Decimal comma and dot as thousands separator: „3,2 Sekunden", „10.000 Nutzer" – never „3.2" or „10,000"
-- Currency after the amount: „40 €", „1,2 Mio. €"
-- Dates: „24.08.2026" or „24. August 2026" – never „08/24/2026" or „2026-08-24" in running prose (ISO stays fine in tables and file names)
-- Quotation marks: „deutsche" – straight "US quotes" in an otherwise typeset German text are a paste signal (see section above)
+- Percent with a space: „50 %“, not „50%“
+- Decimal comma and dot as thousands separator: „3,2 Sekunden“, „10.000 Nutzer“ – never „3.2“ or „10,000“
+- Currency after the amount: „40 €“, „1,2 Mio. €“
+- Dates: „24.08.2026“ or „24. August 2026“ – never „08/24/2026“ or „2026-08-24“ in running prose (ISO stays fine in tables and file names)
+- Quotation marks: „deutsche“ – straight "US quotes" in an otherwise typeset German text are a paste signal (see `pattern-catalog.md`, section 16)
 
 **English documents:** the inverse conventions apply (50%, 3.2, 10,000, $40 / €40 before or after per style, Aug 24, 2026). The flag in both languages is the same: two conventions mixed in one document. Compound modifiers keep the hyphen before the noun and drop it after it ("a high-quality report", "the report is high quality"); dictionary compounds such as "third-party" keep it everywhere. Weak alone.

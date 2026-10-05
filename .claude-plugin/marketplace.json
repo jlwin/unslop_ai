@@ -6,13 +6,13 @@
     "url": "https://github.com/jlwin"
   },
   "description": "Anti-AI-slop writing skills for Claude, German and English.",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "plugins": [
     {
       "name": "unslop",
       "displayName": "unslop",
       "description": "Writing guardrail against AI slop in German and English. Works on three levels – vocabulary, sentence rhythm, discourse structure – with four modes (write, check, rewrite, edit file) and strictness profiles per register.",
-      "version": "1.8.0",
+      "version": "1.8.1",
       "source": "./",
       "author": {
         "name": "Jean-Luc Winkler",

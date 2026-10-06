@@ -161,7 +161,7 @@ Infer the profile from the text (short + hashtags = social; code = docs/tech; sa
 
 ### The slide register
 
-Slides are their own register, and they invert one prose rule: on a slide, the factual-nominal style IS the human professional voice. „Einstieg über die Grundlagen“ is the nominal equivalent of „wir fangen bei null an“ – the colloquial phrasing that sounds alive in a blog post reads as sloppy on a slide. The constructive sentence rules (actor first, everyday words) govern prose; on slides, apply these instead:
+Slides are their own register, and they invert one prose rule: on a slide, the factual-nominal style IS the human professional voice. „Einstieg in die Grundlagen“ is the nominal equivalent of „wir fangen bei null an“ – the colloquial phrasing that sounds alive in a blog post reads as sloppy on a slide. The constructive sentence rules (actor first, everyday words) govern prose; on slides, apply these instead:
 
 - **The title sequence is the deck's summary.** Read only the titles, in order: they have to carry the storyline on their own – that is what noun labels buy you. One core statement per slide; a slide that needs two gets split. A title that promises something the slide body does not deliver means one of the two is wrong. The agenda is the title list, not a separate invention.
 - **Nouns over colloquial verbs and phrases.** „Interaktivität“ instead of „Mitmachen“, „Funktionsweise“ instead of „So funktioniert es“. A sober passive is fine here: „Ungeprüfte Angaben werden nicht übernommen“ states an explicit acceptance rule. „Ungeprüft ist wertlos“ leaves the object and consequence unclear; flag those gaps instead of inferring the acceptance rule.

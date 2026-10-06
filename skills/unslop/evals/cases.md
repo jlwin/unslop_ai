@@ -1,6 +1,6 @@
 # Regression cases
 
-How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12, 14, 15 and 16 must come back clean; flagging any of them is a regression (overflagging counts as failure). All content is invented.
+How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12, 14, 15, 16 and 20 must come back clean; flagging any of them is a regression (overflagging counts as failure). All content is invented.
 
 ## Case 1 – German LinkedIn post (profile: social)
 
@@ -213,3 +213,21 @@ INPUT:
 EXPECTED:
 - P1: em dash on the slide face, even though it is a single dash
 - Must NOT flag: the correctly spaced German en dash in the notes or the ordinary technical verbs. The slide prohibition concerns em dashes, not every dash character or a range marker.
+
+## Case 19 – English load-bearing metaphors in prose (profile: blog)
+
+INPUT:
+> This architecture underpins our platform and serves as the backbone of the entire data pipeline. It pays off by streamlining operations across all regional clusters.
+
+EXPECTED:
+- P1: load-bearing metaphors used as claims ("underpins", "backbone of", "pays off")
+- P1: Tier-1 stock phrase hits ("serves as", "streamlining operations")
+- Rewrite direction: replace metaphors with plain verbs and name the criterion or evidence if supplied in source; flag the missing measurement gaps rather than inventing metrics.
+
+## Case 20 – English clean technical announcement (profile: docs) — MUST STAY CLEAN
+
+INPUT:
+> The database migration completed on Sunday at 02:00 UTC. The new index reduces query latency for accounts with over 100,000 records from 420 ms to 85 ms. No downtime was reported during the window.
+
+EXPECTED:
+- No findings. Specific timestamp, concrete thresholds, exact before/after measurements, and neutral passive ("was reported") in a technical changelog/docs context are clean human professional writing.

@@ -5,6 +5,9 @@
 - Removed `passgenau` from German Tier 2 as a near-duplicate of Tier-1 `maßgeschneidert`
 - Qualified German Tier entries whose technical or domain-correct uses stay protected (`agil`, `End-to-End`, `360-Grad`, `signifikant`)
 - Added the German microformat rule and example for a spaced Gedankenstrich
+- Corrected two awkward German examples in `pattern-catalog.md` and aligned the slide-register wording in `SKILL.md` (`Einstieg in die Grundlagen`, `Wie entwickelt sich der Markt?`)
+- Added German eval cases 21 and 22 for clean microformats and a cluster of German special-case tells
+- Documented the remaining standalone German eval gaps in `evals/cases.md`
 - Bumped the plugin version and both marketplace versions to 1.8.3
 
 ## v1.8.2 – 2026-10-06

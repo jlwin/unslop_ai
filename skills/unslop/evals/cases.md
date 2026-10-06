@@ -1,6 +1,12 @@
 # Regression cases
 
-How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12, 14, 15, 16 and 20 must come back clean; flagging any of them is a regression (overflagging counts as failure). All content is invented.
+How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12, 14, 15, 16, 20 and 21 must come back clean; flagging any of them is a regression (overflagging counts as failure). All content is invented.
+
+German-only rules still not exercised as standalone German cases after 21–22:
+- over-polite mail formulas under salutation calques („Selbstverständlich unterstütze ich Sie gerne bei …“)
+- double hyphen (`--`) as German dash typography
+- the protected counterpart of sham breadth: a real span or range that must stay clean
+- noun chains as a standalone German special case („die Realisierung der Optimierung der Prozesse“)
 
 ## Case 1 – German LinkedIn post (profile: social)
 
@@ -232,3 +238,23 @@ INPUT:
 
 EXPECTED:
 - No findings. Specific timestamp, concrete thresholds, exact before/after measurements, and neutral passive ("was reported") in a technical changelog/docs context are clean human professional writing.
+
+## Case 21 – Clean German microformats (profile: docs) — MUST STAY CLEAN
+
+INPUT:
+> „Version 2“ ging am 24. August 2026 live – nach 3,2 Sekunden war der Export fertig, 10.000 Datensätze waren geladen, und das Team sparte 50 % der Prüfzeit sowie 40 € pro Vorgang.
+
+EXPECTED:
+- No findings. Correct German quotation marks, a correctly spaced en dash, decimal comma, thousands separator, percent spacing, date format, and currency after the amount must stay clean.
+
+## Case 22 – German special cases cluster (profile: email)
+
+INPUT:
+> Ich hoffe, diese E-Mail erreicht Sie wohlbehalten. Von der Buchhaltung bis zur Cloud deckt das Paket alles ab. Doch wie funktioniert das? Werfen wir einen Blick darauf. Fazit: Bei Fragen melde dich gern.
+
+EXPECTED:
+- P0: salutation calque / chat artifact („Ich hoffe, diese E-Mail erreicht Sie wohlbehalten“)
+- P2: sham breadth („Von der Buchhaltung bis zur Cloud“)
+- P2: rhetorical question as scaffolding („Doch wie funktioniert das? Werfen wir einen Blick darauf.“)
+- P2: „Fazit“ ritual used as a generic closer
+- P1: Du/Sie register switch within the same email („Sie“ / „dich“)

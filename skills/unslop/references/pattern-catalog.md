@@ -198,7 +198,7 @@ The compound noun that names content AND function beats the bare topic label whe
 
 Two more title failure modes. The dramatizing relative clause eats space without adding information; replace it by stating the role of the content: „Vier Thesen, die den weiteren Verlauf bestimmen“ → „Vier Thesen“ (flag the gap: their role must come from the slide body). And the didactic meta-commentary that grades its own content reads condescending: „Wer liefert was: mehr Detail braucht es an dieser Stelle nicht“ → „Zuständigkeiten“ (Lücke: Wer liefert was?).
 
-Also nominal, but still wrong: „Vorstellung der Projektergebnisse“ names the act of presenting, not the content → „Projektergebnisse“. Question titles („Wohin entwickelt sich der Markt?“) are a deliberate tension device at most once per deck; as standard scaffolding they become filler → „Marktentwicklung“. Where a deck runs full-sentence action titles throughout, every title has to carry a checkable claim („Churn sinkt seit Mai um 2 Punkte pro Monat“); the flagged pattern is the vague half-sentence, in either style.
+Also nominal, but still wrong: „Vorstellung der Projektergebnisse“ names the act of presenting, not the content → „Projektergebnisse“. Question titles („Wie entwickelt sich der Markt?“) are a deliberate tension device at most once per deck; as standard scaffolding they become filler → „Marktentwicklung“. Where a deck runs full-sentence action titles throughout, every title has to carry a checkable claim („Churn sinkt seit Mai um 2 Punkte pro Monat“); the flagged pattern is the vague half-sentence, in either style.
 
 ## 19. Sentence construction: actor and verb
 
@@ -219,7 +219,7 @@ On slides the factual-nominal style is the professional voice; colloquial phrasi
 Colloquial → nominal:
 
 - VORHER: „Mitmachen“ (als Programmpunkt) → NACHHER: „Interaktivität“
-- VORHER: „Wir fangen bei null an – niemand braucht Vorkenntnisse.“ → NACHHER: „Einstieg über die Grundlagen, damit alle Beteiligten ohne Vorwissen folgen können.“
+- VORHER: „Wir fangen bei null an – niemand braucht Vorkenntnisse.“ → NACHHER: „Einstieg in die Grundlagen, damit alle Beteiligten ohne Vorwissen folgen können.“
 
 Drama → plain statement (a sober passive is legitimate here):
 

@@ -1,12 +1,9 @@
 # Regression cases
 
-How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12, 14, 15, 16, 20 and 21 must come back clean; flagging any of them is a regression (overflagging counts as failure). All content is invented.
+How to run: for each case, run the skill in **check mode** with the stated profile on the INPUT block, then compare the findings to EXPECTED. A case passes when every expected finding category appears with roughly the stated severity and at most one unlisted extra is flagged. Cases 6, 12, 14, 15, 16, 20, 21 and 25 must come back clean; flagging any of them is a regression (overflagging counts as failure). All content is invented.
 
-German-only rules still not exercised as standalone German cases after 21–22:
-- over-polite mail formulas under salutation calques („Selbstverständlich unterstütze ich Sie gerne bei …“)
-- double hyphen (`--`) as German dash typography
-- the protected counterpart of sham breadth: a real span or range that must stay clean
-- noun chains as a standalone German special case („die Realisierung der Optimierung der Prozesse“)
+German-only rules still not exercised as standalone German cases after 23–25:
+- noun chains as a standalone German special case („die Realisierung der Optimierung der Prozesse“); case 5 covers related „-ung + erfolgen“ prose but not this genitive stack on its own
 
 ## Case 1 – German LinkedIn post (profile: social)
 
@@ -258,3 +255,31 @@ EXPECTED:
 - P1: stock transitions / question scaffolding („Doch wie funktioniert das? Werfen wir einen Blick darauf.“)
 - P2: „Fazit“ ritual used as a generic closer
 - P1: Du/Sie register switch within the same email („Sie“ / „dich“)
+
+## Case 23 – Over-polite mail formula (profile: email)
+
+INPUT:
+> Hallo Frau Kehl, selbstverständlich unterstütze ich Sie gerne bei der Abstimmung der Schichtpläne für KW 42. Die Pausenstaffel bleibt 11:00 bis 11:30 Uhr.
+
+EXPECTED:
+- P0: over-polite mail formula under salutation calques („selbstverständlich unterstütze ich Sie gerne …“)
+- Must NOT flag: the named recipient, KW 42, or the real 11:00-bis-11:30 range
+- Rewrite direction: open with the shift-plan matter; keep the pause window; do not invent availability or extra offers
+
+## Case 24 – Double hyphen as dash (profile: blog)
+
+INPUT:
+> Der Prüfbericht liegt seit Freitag vor -- die offenen Punkte stehen in Tabelle 2.
+
+EXPECTED:
+- P2: double hyphen (`--`) used as Gedankenstrich
+- Must NOT flag: Freitag, Tabelle 2
+- Rewrite direction: replace `--` with a comma, period, parenthesis, or colon; add no new findings from the report
+
+## Case 25 – Real span, not sham breadth (profile: docs) — MUST STAY CLEAN
+
+INPUT:
+> Die Kältehalle bleibt von Samstag, 10. Oktober 2026, 22:00 Uhr bis Sonntag, 11. Oktober 2026, 6:00 Uhr geschlossen. In diesem Fenster fahren die Förderbänder nicht.
+
+EXPECTED:
+- No findings. A dated maintenance window is a real range, not sham breadth. Flagging „von … bis …“ here is a regression.

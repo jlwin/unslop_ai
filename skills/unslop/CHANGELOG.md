@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.8.4 – 2026-10-06
+
+- Aligned the slide-register em-dash and command-tone examples in `SKILL.md` with catalog section 20 (unspaced em dash as the tell; AFTER uses „und“, no em dash)
+- Clarified that the slide em-dash ban does not apply to a spaced en dash as range marker or Gedankenstrich
+- Replaced the catalog NACHHER for the colloquial slide line so it keeps both source facts and invents neither purpose nor participants
+- Added a catalog pair for load-bearing metaphors used as slide verdicts (flag the missing criterion; do not invent one)
+- Added German eval cases 23–25: over-polite mail formula, double hyphen as dash, and a clean real time span (MUST STAY CLEAN); noun chains remain the open standalone German gap
+- Bumped the plugin version and both marketplace versions to 1.8.4
+
 ## v1.8.3 – 2026-10-06
 
 - Removed `passgenau` from German Tier 2 as a near-duplicate of Tier-1 `maßgeschneidert`

@@ -221,7 +221,8 @@ INPUT:
 
 EXPECTED:
 - P1: load-bearing metaphors used as claims ("underpins", "backbone of", "pays off")
-- P1: Tier-1 stock phrase hits ("serves as", "streamlining operations")
+- P2: copula avoidance ("serves as")
+- P1: Tier-1 stock-phrase hit ("streamlining operations")
 - Rewrite direction: replace metaphors with plain verbs and name the criterion or evidence if supplied in source; flag the missing measurement gaps rather than inventing metrics.
 
 ## Case 20 – English clean technical announcement (profile: docs) — MUST STAY CLEAN

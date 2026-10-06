@@ -4,7 +4,6 @@
 
 - Reviewed English coverage, stock phrases, and word list hygiene
 - Removed duplicate 'additionally' from English Tier 2 word list
-- Calibrated wordy formalisms ('due to the fact that / in order to') in Tier 1 word list
 - Audited all 30 pattern families in `pattern-catalog.md` for fact fidelity; confirmed every AFTER line preserves facts of its BEFORE line without additions
 - Added regression cases 19 and 20 to `evals/cases.md` for English load-bearing metaphors and clean technical announcements (marked MUST STAY CLEAN)
 - Verified `README.md` accuracy against `SKILL.md`

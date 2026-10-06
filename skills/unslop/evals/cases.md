@@ -255,6 +255,6 @@ INPUT:
 EXPECTED:
 - P0: salutation calque / chat artifact („Ich hoffe, diese E-Mail erreicht Sie wohlbehalten“)
 - P2: sham breadth („Von der Buchhaltung bis zur Cloud“)
-- P2: rhetorical question as scaffolding („Doch wie funktioniert das? Werfen wir einen Blick darauf.“)
+- P1: stock transitions / question scaffolding („Doch wie funktioniert das? Werfen wir einen Blick darauf.“)
 - P2: „Fazit“ ritual used as a generic closer
 - P1: Du/Sie register switch within the same email („Sie“ / „dich“)

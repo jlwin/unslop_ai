@@ -1,7 +1,7 @@
 {
   "name": "unslop",
   "description": "Writing guardrail against AI slop in German and English: word, rhythm and structure level, four modes, register profiles.",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "author": {
     "name": "Jean-Luc Winkler",
     "url": "https://github.com/jlwin"

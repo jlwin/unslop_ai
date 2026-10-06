@@ -110,7 +110,7 @@ Apply the matching rule's severity in `../SKILL.md`; stock-phrase headings do no
 
 ### Tier 2 – flag when two or more cluster
 
-navigate (figurativ), bolster, spearhead, resonate, revolutionize, catalyze, augment, illuminate, elucidate, cornerstone, paramount, poised to, burgeoning, nascent, quintessential, overarching, transformative, ecosystem (metaphorisch), interplay, encompass, notably, moreover, furthermore, additionally
+navigate (figurativ), bolster, spearhead, resonate, revolutionize, catalyze, augment, illuminate, elucidate, cornerstone, paramount, poised to, burgeoning, nascent, quintessential, overarching, transformative, ecosystem (metaphorisch), interplay, encompass, notably, moreover, furthermore
 
 ### Tier 3 – flag only when they pile up
 

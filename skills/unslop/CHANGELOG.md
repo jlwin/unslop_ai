@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.8.2 – 2026-10-06
+
+- Reviewed English coverage, stock phrases, and word list hygiene
+- Removed duplicate 'additionally' from English Tier 2 word list
+- Calibrated wordy formalisms ('due to the fact that / in order to') in Tier 1 word list
+- Audited all 30 pattern families in `pattern-catalog.md` for fact fidelity; confirmed every AFTER line preserves facts of its BEFORE line without additions
+- Added regression cases 19 and 20 to `evals/cases.md` for English load-bearing metaphors and clean technical announcements (marked MUST STAY CLEAN)
+- Verified `README.md` accuracy against `SKILL.md`
+- Bumped version to 1.8.2 in `plugin.json` and `marketplace.json`
+
 ## v1.8.1 – 2026-10-05
 
 - Aligned the short version, severity list, and self-check with register profiles, vocabulary tiers, permitted triads and contrasts, meaningful participle tails, action titles, and required summaries; stock phrases use their rule's severity; check mode continues to flag without editing

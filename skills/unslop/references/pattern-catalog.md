@@ -219,7 +219,7 @@ On slides the factual-nominal style is the professional voice; colloquial phrasi
 Colloquial → nominal:
 
 - VORHER: „Mitmachen“ (als Programmpunkt) → NACHHER: „Interaktivität“
-- VORHER: „Wir fangen bei null an – niemand braucht Vorkenntnisse.“ → NACHHER: „Einstieg in die Grundlagen, damit alle Beteiligten ohne Vorwissen folgen können.“
+- VORHER: „Wir fangen bei null an – niemand braucht Vorkenntnisse.“ → NACHHER: „Einstieg in die Grundlagen ohne Vorkenntnisse.“
 
 Drama → plain statement (a sober passive is legitimate here):
 
@@ -230,9 +230,13 @@ Command tone → recommendation:
 
 - VORHER: „Kennzahlen vor dem Versand immer checken!“ → NACHHER: „Empfehlung: Kennzahlen vor jedem Versand prüfen.“
 
-Em dash → conjunction, colon, or clause (zero em dashes on slides):
+Em dash → conjunction, colon, or clause (zero em dashes on slides). A spaced en dash as range marker or Gedankenstrich is not this prohibition:
 
 - VORHER: „Direkt startklar—perfekt für neue Teammitglieder“ (bewusst falsche Dash-Typografie) → NACHHER: „Direkt startklar und perfekt für neue Teammitglieder“
+
+Load-bearing metaphor as verdict → number or criterion; if the source has neither, flag the gap:
+
+- VORHER: „Das Konzept trägt.“ → NACHHER: Keine inhaltstreue Neufassung. (Lücke: messbares Kriterium; keines erfinden.)
 
 Cut without replacement:
 

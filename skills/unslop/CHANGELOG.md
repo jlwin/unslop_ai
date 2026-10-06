@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.8.3 – 2026-10-06
+
+- Removed `passgenau` from German Tier 2 as a near-duplicate of Tier-1 `maßgeschneidert`
+- Qualified German Tier entries whose technical or domain-correct uses stay protected (`agil`, `End-to-End`, `360-Grad`, `signifikant`)
+- Added the German microformat rule and example for a spaced Gedankenstrich
+- Bumped the plugin version and both marketplace versions to 1.8.3
+
 ## v1.8.2 – 2026-10-06
 
 - Reviewed English coverage, stock phrases, and word list hygiene

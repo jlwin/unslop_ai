@@ -43,11 +43,11 @@ Inflected forms count (nahtlos → nahtlose, delve → delving). Don't flag word
 
 ### Tier 2 – flag when two or more cluster
 
-optimieren, effizient (ohne Messgröße), innovativ, nachhaltig (als Universaladjektiv), zentral, entscheidend, maßgeblich, umfassend, fundiert, gezielt, individuell, flexibel, transparent (als Buzzword), agil, smart, digital (als Weihwasser: „digitale Lösungen“), zeitnah, proaktiv, niederschwellig, praxisnah, passgenau, zielführend, ergebnisoffen, wertschätzend, auf Augenhöhe, End-to-End, 360-Grad, Rundum-sorglos
+optimieren, effizient (ohne Messgröße), innovativ, nachhaltig (als Universaladjektiv), zentral, entscheidend, maßgeblich, umfassend, fundiert, gezielt, individuell, flexibel, transparent (als Buzzword), agil (als Selbstlob; Scrum/Agile fachlich bleibt), smart, digital (als Weihwasser: „digitale Lösungen“), zeitnah, proaktiv, niederschwellig, praxisnah, zielführend, ergebnisoffen, wertschätzend, auf Augenhöhe, End-to-End (als Buzzword außerhalb einer konkreten Prozesskette), 360-Grad (als Vollständigkeits-Versprechen), Rundum-sorglos
 
 ### Tier 3 – flag only when they pile up
 
-wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, beeindruckend, deutlich, erheblich, signifikant, optimal, ideal, perfekt
+wichtig, relevant, modern, professionell, hochwertig, erfolgreich, einzigartig, beeindruckend, deutlich, erheblich, signifikant (außerhalb Statistik/Forschung), optimal, ideal, perfekt
 
 ### German stock phrases: cut or replace
 
@@ -162,10 +162,11 @@ Wrong locale conventions warrant P2 where they qualify as defects; mixed convent
 
 **German documents:**
 
+- Quotation marks: „deutsche“ – straight "US quotes" in an otherwise typeset German text are a paste signal (see `pattern-catalog.md`, section 16)
+- Spaced en dash as Gedankenstrich: „Das klappt – wenn die Daten stimmen.“ – not „Das klappt-wenn die Daten stimmen.“ or „Das klappt—wenn die Daten stimmen.“
 - Percent with a space: „50 %“, not „50%“
 - Decimal comma and dot as thousands separator: „3,2 Sekunden“, „10.000 Nutzer“ – never „3.2“ or „10,000“
-- Currency after the amount: „40 €“, „1,2 Mio. €“
 - Dates: „24.08.2026“ or „24. August 2026“ – never „08/24/2026“ or „2026-08-24“ in running prose (ISO stays fine in tables and file names)
-- Quotation marks: „deutsche“ – straight "US quotes" in an otherwise typeset German text are a paste signal (see `pattern-catalog.md`, section 16)
+- Currency after the amount: „40 €“, „1,2 Mio. €“
 
 **English documents:** the inverse conventions apply (50%, 3.2, 10,000, $40 / €40 before or after per style, Aug 24, 2026). The flag in both languages is the same: two conventions mixed in one document. Compound modifiers keep the hyphen before the noun and drop it after it ("a high-quality report", "the report is high quality"); dictionary compounds such as "third-party" keep it everywhere. Weak alone.

@@ -1,17 +1,20 @@
 ---
 name: unslop
 description: >-
-  Writing and editing guardrail against AI slop in German and English prose.
-  Use whenever text is being written or revised that should not read as
-  machine-written – LinkedIn posts, emails, newsletters, blog articles, website
-  copy, reports, slide decks (Präsentationen, Folien, Folientitel), bios,
-  press releases, cover letters. Always apply on requests
-  like "unslop", "de-slop", "humanize", "make this sound human", "sounds like
+  Writing guardrail against AI slop in German and English. Apply automatically,
+  without being asked, whenever you draft or revise prose that a person will
+  send, post or publish and that runs longer than a few sentences: emails and
+  replies, chat messages (Slack, Teams), LinkedIn and other social posts,
+  software tickets (Jira, GitHub/GitLab issues, bug reports, user stories,
+  acceptance criteria, PR descriptions, release notes), docs and READMEs,
+  newsletters, blog and website copy, reports, slide decks (Präsentationen,
+  Folien, Folientitel), bios, press releases, cover letters. Also apply on requests like
+  "unslop", "de-slop", "humanize", "make this sound human", "sounds like
   ChatGPT", "remove AI patterns", "klingt nach AI/ChatGPT", "menschlicher
   machen", "entschlacken", "AI-Slop", "AI-Muster prüfen", "natürlicher
-  schreiben", "zu glatt", "zu generisch". Also use as a quality layer on top of
-  other content skills: produce the content first, then run this skill as a
-  review pass.
+  schreiben", "zu glatt", "zu generisch". When another skill produces the
+  text, run this as the final review pass. Skip code, commands, data tables
+  and one-line answers.
 ---
 
 # Unslop
@@ -48,6 +51,8 @@ Order of precedence when rules collide: guardrails beat everything, then the reg
 ## Working with other content skills
 
 Voice, brand, and format skills set the content and tone. unslop checks vocabulary, rhythm, and structure. When a brand vocabulary term collides with the word lists, the brand term stays (in check mode, note the collision instead of flagging it). Structure and rhythm rules and the guardrails apply regardless of which skill produced the draft.
+
+When unslop loads on its own because Claude is drafting longer prose, it runs as silent write mode: no announcement, no audit, no change log unless asked. For texts of only a few sentences, apply the word lists, the P0 list and the guardrails, and leave rhythm and structure alone.
 
 When another skill or task calls unslop as its quality pass, return only the corrected text unless an audit or change log is requested. Report unresolved factual gaps separately; do not hide them or insert them into the deliverable. When the user supplies a sample of their own writing, its measurable habits (dash rate, sentence length, typical openings) override the generic budgets in this file: the sample shows what this writer does on purpose.
 
@@ -142,7 +147,7 @@ The anti-convergence rule governs all of this: the five major models cluster in 
 
 ## Context profiles
 
-Infer the profile from the text (short + hashtags = social; code = docs/tech; salutation = email; citations = academic; deck outline or slide content = slides) or ask. The profile sets the strictness:
+Infer the profile from the text (short + hashtags = social; code, tickets, issues, PR descriptions or release notes = docs/tech; salutation or chat message such as Slack or Teams = email/DM; citations = academic; deck outline or slide content = slides) or ask. The profile sets the strictness:
 
 | Rule | Social/LinkedIn | Blog/article | Email/DM | Docs/tech | Academic | Slides/deck |
 |---|---|---|---|---|---|---|

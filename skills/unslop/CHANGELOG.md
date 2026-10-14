@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.8.5 – 2026-10-14
+
+- Rewrote the frontmatter description so the skill loads on its own for longer prose people will send or publish, now including chat messages (Slack, Teams), software tickets, issues, user stories, PR descriptions and release notes; kept every earlier trigger phrase and added exclusions for code, commands, data tables and one-line answers
+- Profile inference: tickets, issues, PR descriptions and release notes map to docs/tech, chat messages to email/DM
+- Automatic use runs as silent write mode; texts of only a few sentences get the word lists, the P0 list and the guardrails only
+- Added trigger checks to `evals/cases.md` (prompts that should and should not load the skill) and a "When it runs" section to the README
+- Bumped the plugin version and both marketplace versions to 1.8.5
+
 ## v1.8.4 – 2026-10-06
 
 - Aligned the slide-register em-dash and command-tone examples in `SKILL.md` with catalog section 20 (unspaced em dash as the tell; AFTER uses „und“, no em dash)

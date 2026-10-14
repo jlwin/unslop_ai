@@ -26,6 +26,10 @@ One rule runs through all three levels: swap the vague claim for the checkable f
 
 **Calibrated, not dogmatic.** Rules apply per register. Fragments are native on LinkedIn and a tell in long-form prose. Hedging is a bug in marketing copy and a requirement in academic writing, where neutral precision *is* the human voice. A context-profile table (Social, Blog, Email, Docs, Academic, Slides) sets the strictness per rule.
 
+## When it runs
+
+Once installed, the skill loads by itself whenever Claude drafts or revises prose of more than a few sentences that someone will send or publish: emails, Slack or Teams messages, social posts, tickets and issues, PR descriptions, release notes, docs, reports, decks. It stays out of code, commands, data tables and one-line answers. Trigger checks for this live at the end of `skills/unslop/evals/cases.md`.
+
 ## Modes
 
 | Mode | Trigger | Behavior |

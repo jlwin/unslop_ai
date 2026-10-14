@@ -283,3 +283,23 @@ INPUT:
 
 EXPECTED:
 - No findings. A dated maintenance window is a real range, not sham breadth. Flagging „von … bis …“ here is a regression.
+
+## Trigger checks (does the skill load on its own?)
+
+These check the frontmatter description, not the rules. Send each prompt in a fresh session with unslop installed and no mention of the skill, then note whether it loads. All prompts are invented.
+
+Should load:
+- „Schreib ein Jira-Ticket: Der CSV-Export bricht bei Umlauten im Dateinamen ab. Bitte mit Akzeptanzkriterien.“
+- "Draft a GitHub issue for the login timeout we saw on Tuesday, with steps to reproduce."
+- „Formulier eine Slack-Nachricht ans Team, dass das Release auf Donnerstag rutscht und warum.“
+- "Write the PR description for the attached diff."
+- „Antworte Herrn Brandt per E-Mail, dass wir das Angebot bis Freitag schicken.“
+- „Schreib einen LinkedIn-Post über unseren neuen Standort in Leipzig.“
+- "Write release notes for version 2.3 from this changelog."
+
+Should not load:
+- „Schreib eine Python-Funktion, die doppelte Zeilen aus einer CSV entfernt.“
+- "What's the capital of Portugal?"
+- „Wandle diese Tabelle in JSON um.“
+- "Give me the git command to undo my last commit."
+
